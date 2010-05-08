@@ -23,7 +23,7 @@
 			<key>label</key>
 			<string>Hyphenate clipboard</string>
 			<key>lastUsed</key>
-			<date>2010-05-08T01:03:52Z</date>
+			<date>2010-05-08T02:27:36Z</date>
 			<key>modificationDate</key>
 			<date>2010-05-07T19:14:33Z</date>
 			<key>plainText</key>
@@ -77,7 +77,7 @@ print "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}" 
 			<key>label</key>
 			<string>Clipboard HTML Link</string>
 			<key>lastUsed</key>
-			<date>2010-05-08T01:00:49Z</date>
+			<date>2010-05-08T04:34:05Z</date>
 			<key>modificationDate</key>
 			<date>2010-05-05T20:04:04Z</date>
 			<key>plainText</key>
@@ -123,7 +123,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>label</key>
 			<string>Markdown Link</string>
 			<key>lastUsed</key>
-			<date>2010-05-07T19:02:27Z</date>
+			<date>2010-05-08T04:34:30Z</date>
 			<key>modificationDate</key>
 			<date>2010-05-05T20:03:58Z</date>
 			<key>plainText</key>
@@ -575,7 +575,7 @@ print open("http://tinyurl.com/api-create.php?url=#{CGI.escape(url)}").read unle
 			<key>label</key>
 			<string>Make URL</string>
 			<key>lastUsed</key>
-			<date>2010-05-08T00:58:53Z</date>
+			<date>2010-05-08T04:34:22Z</date>
 			<key>modificationDate</key>
 			<date>2010-05-08T00:58:24Z</date>
 			<key>plainText</key>
@@ -687,9 +687,9 @@ print url unless url.nil?</string>
 			<key>label</key>
 			<string>Paste Markdown References</string>
 			<key>lastUsed</key>
-			<date>2010-05-08T00:47:15Z</date>
+			<date>2010-05-08T04:37:43Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-08T00:54:22Z</date>
+			<date>2010-05-08T04:37:38Z</date>
 			<key>plainText</key>
 			<string>#!/usr/bin/env ruby -rjcode -Ku
 =begin
@@ -699,7 +699,7 @@ if the links in the clipboard are already in markdown reference format, it prese
 =end
 
 clipboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
-links = clipboard.scan /(?:\[([^\]]+)\]\: )?(https?:\/\/[^ \n"]+)/m
+links = clipboard.scan /(?:\[([^\]]+)\]\: )?(https?:\/\/[^ \n\r"]+)/m
 norepeat = []
 output = []
 exit if links.nil?
