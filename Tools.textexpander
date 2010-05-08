@@ -159,34 +159,6 @@ print %Q{[%fill:Link Text%](#{url})}</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,nav</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2009-10-28T20:01:04Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Placeholder Nav</string>
-			<key>modificationDate</key>
-			<date>2010-04-30T03:48:03Z</date>
-			<key>plainText</key>
-			<string>&lt;ul id="nav"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Clients&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>24124254-E042-4C04-A185-DF0212FF54DD</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
 			<string>,,roundall</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
