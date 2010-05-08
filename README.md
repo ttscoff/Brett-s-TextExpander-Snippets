@@ -48,14 +48,14 @@ Just collecting a few of my favorite TextExpander snippets here, feel free to us
 
 #### Lipsums.textexpander ####
 
-* Placeholder Nav
+* **Placeholder Nav**
 
 	Basic unordered list with dummy links.
 
-* Standard Lipsum
+* **Standard Lipsum**
 
 	Three lipsumX commands for 1, 2 or 3 paragraphs of standard Lorem Ipsum.
 
-* HTML Lipsum
+* **HTML Lipsum**
 
 	Ordered list, unordered list, and the full medley of HTML Lipsum for styling.
