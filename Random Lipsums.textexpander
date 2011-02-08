@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>2</integer>
+		<key>groupName</key>
+		<string>Random Lipsums</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>!bac</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T19:01:39Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Loripscream Bacon</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T19:11:24Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T19:24:31Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl "http://loremipscream.com/flavors/chunky_bacon/serving.txt"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>98E0B799-68D9-4D80-B543-0A6C044D3582</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>!cho</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T19:01:39Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Loripscream German Chocolate</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T19:20:51Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T19:24:26Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl "http://loremipscream.com/flavors/chocolate/serving.txt"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D1702D88-5334-4A29-BDC8-C0710F716A65</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>!emo</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T19:01:39Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Loripscream Sailing Three Tuesdays</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T19:21:52Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T19:24:21Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl "http://loremipscream.com/flavors/emo/serving.txt"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>81F83F8F-1D77-4A63-86FB-D02B6F0BC006</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>!min</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T19:01:39Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Loripscream Mint Chocolate Czech</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T19:20:41Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T19:24:23Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl "http://loremipscream.com/flavors/mint/serving.txt"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>013D1177-F94D-41A2-8E54-6BF17919CB8E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>!nea</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T19:01:39Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Loripscream Neapolitician</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T19:23:58Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T19:24:13Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl "http://loremipscream.com/flavors/neapolitician/serving.txt"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D54E966F-83D8-425D-B2FC-00EACDF66890</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>!soy</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T19:01:39Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Loripscream Soylent Cream</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T19:21:52Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T19:24:18Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl "http://loremipscream.com/flavors/soylent/serving.txt"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>472A9072-31AB-433E-8E5B-C86674E62029</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>!toa</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T19:01:39Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Loripscream Texas Toast</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T19:21:52Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T19:24:16Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl "http://loremipscream.com/flavors/toast/serving.txt"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F814193D-D4A8-4238-A9B7-1B2FC42A5BD7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>!van</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T19:01:39Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Loripscream Vanilla</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T19:19:03Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T19:24:28Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl "http://loremipscream.com/flavors/vanilla/serving.txt"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0BEF3566-3695-4B53-BF88-378FE7F4D4F5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremh84</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-06T15:03:10Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>1984 HTML Lipsum</string>
+			<key>lastUsed</key>
+			<date>2011-02-07T13:58:43Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-06T15:03:10Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'rubygems'
+require 'raingrams'
+require 'maruku'
+
+include Raingrams
+
+# All (min,max) pairs need max &gt; min
+
+@model = BigramModel.build do |model|
+  model.train_with_text File.new(File.expand_path('~/words/inputtext.txt'),'r').read
+end
+
+@model.refresh
+
+# generates a paragraph with random sentences
+# min = minimum sentences
+# max = maximum sentences
+def graf(min,max) 
+  # grab the paragraph and split it into words
+  para = @model.random_paragraph({:min_sentences =&gt; min,:max_sentences =&gt; max }).split(' ')
+  # add a random italics element
+  em = (rand(para.count - 10) + 10)
+  para[em] = "*#{para[em]}*"
+  # add a random bold element
+  strong = (rand(para.count - 10) + 10)
+  # make sure they don't overlap
+  strong = strong - 2 if strong == em
+  para[strong] = "**#{para[strong]}**"
+  # add a multi-word link
+  link = (rand(para.count - 10) + 10)
+  linkend = link + (rand(6) + 2)
+  para[link] = "[#{para[link]}"
+  para[linkend] = "#{para[linkend]}](http://dummy.com)"
+  return para.join(' ')
+end
+
+# returns a random sentence, used in headlines
+# min = minumum words, max = max words
+def sentence(min,max) 
+  return @model.random_sentence.split(' ')[0..(rand(max - min)+min)].join(' ')
+end
+
+# returns a random list
+# type = ul or ol
+# min = minimum number of list items
+# max = maximum number of list items
+def list(type,min,max)
+  list = '';
+  prefix = type == "ol" ? " 1. " : " * "
+  (rand(max - min) + min).times do
+    list += prefix + @model.random_gram.to_s + "\n"
+  end
+  list += "\n\n"
+  return list
+end
+
+# Sequentially builds an output variable (o)
+# Chop this apart to make snippets as needed
+
+# Level 1 headline
+o = "# " + sentence(2,5) + "\n\n"
+# 2 medium paragraphs
+2.times do
+  o += "#{graf(4,6)}\n\n"
+end
+# Level 2 headline
+o += "## " + sentence(4,7) + "\n\n"
+# 1 short paragraph
+o += graf(2,4) + "\n\n"
+# an unordered list
+o += list('ul',5,8) + "\n\n"
+# 1 more long paragraph
+o += graf(6,8) + "\n\n"
+# Level 3 header
+o += "### " + sentence(5,9) + "\n\n"
+# medium paragraph
+o += graf(4,6) + "\n\n"
+# ordered list
+o += list('ol',5,8) + "\n\n"
+
+# Process Markdown to HTML
+
+# if you want just the Markdown
+# delete the two lines below
+# and replace with 'puts o'
+doc = Maruku.new(o)
+puts doc.to_html.gsub(/\/li&gt;\n/,'/li&gt;').gsub(/\/li&gt;&lt;\/([uo])l/,"/li&gt;\n&lt;/\\1l")
+# the gsub is just to clean up maruku's double-spaced list output</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DCAF9DF6-5775-49C7-858D-A2568839A991</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>lorem84</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-06T05:19:19Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>1984 Lipsum</string>
+			<key>lastUsed</key>
+			<date>2011-02-07T13:58:38Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-06T14:41:58Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'rubygems'
+require 'raingrams'
+
+include Raingrams
+
+model = BigramModel.build do |model|
+  model.train_with_text File.new(File.expand_path('~/words/1984trunc.txt'),'r').read
+end
+
+model.refresh
+
+3.times do
+  graf = model.random_paragraph({:min_sentences =&gt; 4,:max_sentences =&gt; 6 })
+  puts "#{graf}\n\n"
+end</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BBA3EE85-FDF8-46D3-B6BD-D7585680DBB1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremhk1</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, 1 paragraph with tags</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T14:17:03Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:40:58Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+minwords = 42
+
+url = "http://kwisatz.hadera.ch/paragraph/#{minwords}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here is.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+content.strip.gsub(/[\s\t]+/m,' ').scan(/&lt;p&gt;(.*?)&lt;\/p&gt;/).each {|graf|
+  # puts graf[0].strip + "\n\n"
+  puts "&lt;p&gt;#{graf[0].strip}&lt;/p&gt;\n\n"
+}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>8379B31D-AD83-4DE0-BDF2-49D0E2FD1714</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremhk2</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, 2 paragraphs with tags</string>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:15:56Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+paragraphs = 2
+minwords = 42
+
+url = "http://kwisatz.hadera.ch/paragraphs/#{paragraphs}/#{minwords}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here are.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+content.strip.gsub(/[\s\t]+/m,' ').scan(/&lt;p&gt;(.*?)&lt;\/p&gt;/).each {|graf|
+  # puts graf[0].strip + "\n\n"
+  puts "&lt;p&gt;#{graf[0].strip}&lt;/p&gt;\n\n"
+}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>DF50EDC4-1A66-4D7A-B2CD-F17CD4884144</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremhk3</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, 3 paragraphs with tags</string>
+			<key>lastUsed</key>
+			<date>2011-02-07T13:58:10Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:15:28Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+paragraphs = 3
+minwords = 42
+
+url = "http://kwisatz.hadera.ch/paragraphs/#{paragraphs}/#{minwords}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here are.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+content.strip.gsub(/[\s\t]+/m,' ').scan(/&lt;p&gt;(.*?)&lt;\/p&gt;/).each {|graf|
+  # puts graf[0].strip + "\n\n"
+  puts "&lt;p&gt;#{graf[0].strip}&lt;/p&gt;\n\n"
+}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>99A84D07-8798-472F-B579-45086619FCC2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremi</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-02T16:05:54Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>LoremIpscream</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T15:16:02Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-02T16:07:42Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+curl "http://loremipscream.com/flavors/chunky_bacon/serving.txt"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>87EA5070-B54F-426A-B72C-AC8660CB5E4C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremk1</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, 1 paragraph no tags</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T15:15:08Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:40:52Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+minwords = 42
+
+url = "http://kwisatz.hadera.ch/paragraph/#{minwords}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here is.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+content.strip.gsub(/[\s\t]+/m,' ').scan(/&lt;p&gt;(.*?)&lt;\/p&gt;/).each {|graf|
+  puts graf[0].strip + "\n\n"
+}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>077C31F6-D630-48D6-B6CB-59EB0A667241</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremk2</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, 2 paragraphs no tags</string>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:16:09Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+paragraphs = 2
+minwords = 42
+
+url = "http://kwisatz.hadera.ch/paragraphs/#{paragraphs}/#{minwords}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here are.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+content.strip.gsub(/[\s\t]+/m,' ').scan(/&lt;p&gt;(.*?)&lt;\/p&gt;/).each {|graf|
+  puts graf[0].strip + "\n\n"
+}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2989E8CE-1976-429A-ACBC-8A208927646E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremk3</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, 3 paragraphs no tags</string>
+			<key>lastUsed</key>
+			<date>2011-02-07T13:58:06Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:15:48Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+paragraphs = 3
+minwords = 42
+
+url = "http://kwisatz.hadera.ch/paragraphs/#{paragraphs}/#{minwords}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here are.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+content.strip.gsub(/[\s\t]+/m,' ').scan(/&lt;p&gt;(.*?)&lt;\/p&gt;/).each {|graf|
+  puts graf[0].strip + "\n\n"
+}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>1C6FD7E5-04F1-4EAC-B887-02AB196C2BAC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremklol</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, long ol</string>
+			<key>lastUsed</key>
+			<date>2011-02-05T20:07:56Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:40:07Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+items = 8
+list_type = "ol"
+
+url = "http://kwisatz.hadera.ch/paragraphs/paragraph/#{items}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here is.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+words = content.strip.match(/&lt;p&gt;(.*?)&lt;\/p&gt;/m)[1].gsub(/\t+/,' ').gsub(/(\n\s*)+/,"\n").strip.split("\n").slice(0,items)
+
+puts "&lt;#{list_type}&gt;"
+words.each {|word|
+  puts "&lt;li&gt;#{word.strip}&lt;/li&gt;\n"
+}
+puts "&lt;/#{list_type}&gt;"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>94C8D759-4103-41DD-8C76-271B06E0BE57</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremklul</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, long ul</string>
+			<key>lastUsed</key>
+			<date>2011-02-05T20:08:03Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:40:03Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+items = 8
+list_type = "ul"
+
+url = "http://kwisatz.hadera.ch/paragraphs/paragraph/#{items}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here is.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+words = content.strip.match(/&lt;p&gt;(.*?)&lt;\/p&gt;/m)[1].gsub(/\t+/,' ').gsub(/(\n\s*)+/,"\n").strip.split("\n").slice(0,items)
+
+puts "&lt;#{list_type}&gt;"
+words.each {|word|
+  puts "&lt;li&gt;#{word.strip}&lt;/li&gt;\n"
+}
+puts "&lt;/#{list_type}&gt;"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>103B4C9D-39FB-4F24-A669-B69442DFAECC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremksol</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, short ol</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T14:17:08Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:39:52Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+items = 3
+list_type = "ol"
+
+url = "http://kwisatz.hadera.ch/paragraphs/paragraph/#{items}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here is.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+words = content.strip.match(/&lt;p&gt;(.*?)&lt;\/p&gt;/m)[1].gsub(/\t+/,' ').gsub(/(\n\s*)+/,"\n").strip.split("\n").slice(0,items)
+
+puts "&lt;#{list_type}&gt;"
+words.each {|word|
+  puts "&lt;li&gt;#{word.strip}&lt;/li&gt;\n"
+}
+puts "&lt;/#{list_type}&gt;"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>61DE015F-876A-405F-AC69-B6778D9230DA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremksul</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-04T14:10:34Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Kwisatz Haderach Lipsum, short ul</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T14:17:08Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T14:39:57Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+
+require 'cgi'
+require 'open-uri'
+
+items = 3
+list_type = "ul"
+
+url = "http://kwisatz.hadera.ch/paragraphs/paragraph/#{items}"
+res = open( url,"User-Agent" =&gt; "TextExpanderLipsumGenerator").read
+
+content = res.match(/&lt;h3&gt;Here is.*?&lt;\/h3&gt;(.*?)&lt;hr/m)[1]
+words = content.strip.match(/&lt;p&gt;(.*?)&lt;\/p&gt;/m)[1].gsub(/\t+/,' ').gsub(/(\n\s*)+/,"\n").strip.split("\n").slice(0,items)
+
+puts "&lt;#{list_type}&gt;"
+words.each {|word|
+  puts "&lt;li&gt;#{word.strip}&lt;/li&gt;\n"
+}
+puts "&lt;/#{list_type}&gt;"</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>4E429021-C5E9-4F58-B61D-55F485D0B6F1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>loremr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-02T05:18:59Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Random Lipsum</string>
+			<key>lastUsed</key>
+			<date>2011-02-04T04:37:38Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-04T04:37:32Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+
+curl -s 'http://www.lipsum.com/feed/xml?amount=2&amp;what=paras&amp;start=0'| \
+xpath '//lipsum' 2&gt;/dev/null | sed -e 's/&lt;lipsum&gt;//' -e 's/&lt;\/lipsum&gt;//'|awk -F"\n" '{print $1"\n"}'</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>8CBA6DDB-53E4-41E8-BFA2-08CDC305A263</string>
+		</dict>
+	</array>
+</dict>
+</plist>
