@@ -59,3 +59,11 @@ Just collecting a few of my favorite TextExpander snippets here, feel free to us
 * **HTML Lipsum**
 
 	Ordered list, unordered list, and the full medley of HTML Lipsum for styling.
+
+#### Random Lipsums.textexpander ####
+
+* A series of snippets which use shell scripts to generate random text from various sources.
+
+#### iOS Markdown.textexpander ####
+
+* Snippets for fast Markdown entry using TextExpander touch
