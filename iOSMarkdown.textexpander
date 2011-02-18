@@ -45,7 +45,7 @@
 			<key>label</key>
 			<string></string>
 			<key>modificationDate</key>
-			<date>2011-02-17T16:23:56Z</date>
+			<date>2011-02-18T14:15:16Z</date>
 			<key>plainText</key>
 			<string>"%|"</string>
 			<key>snippetType</key>
@@ -155,9 +155,9 @@
 			<key>label</key>
 			<string></string>
 			<key>modificationDate</key>
-			<date>2011-02-17T16:27:24Z</date>
+			<date>2011-02-18T14:14:25Z</date>
 			<key>plainText</key>
-			<string>'%I'</string>
+			<string>'%|'</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
