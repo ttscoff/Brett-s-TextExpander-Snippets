@@ -50,7 +50,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>label</key>
 			<string>Dummy Image</string>
 			<key>lastUsed</key>
-			<date>2010-08-15T21:11:19Z</date>
+			<date>2011-03-01T01:14:23Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-13T15:08:58Z</date>
 			<key>plainText</key>
@@ -61,6 +61,54 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<integer>8</integer>
 			<key>uuidString</key>
 			<string>91FEE5DC-C0A0-4F79-A5F7-71963F28BDBD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,kittyg</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-08-03T18:45:58Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Kitty Placeholder - Grey</string>
+			<key>lastUsed</key>
+			<date>2011-03-01T01:13:08Z</date>
+			<key>modificationDate</key>
+			<date>2011-03-01T01:12:44Z</date>
+			<key>plainText</key>
+			<string>&lt;img src="http://placekitten.com/g/%fill:width%/%fill:height%" alt="KITTEH %fill:width%x%fill:height%" width="%fill:width%" height="%fill:height%" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>8</integer>
+			<key>uuidString</key>
+			<string>B3728814-C136-406B-995B-E97AD43C2423</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,kittyc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-08-03T18:45:58Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Kitty Placeholder - Color</string>
+			<key>lastUsed</key>
+			<date>2011-03-01T01:14:49Z</date>
+			<key>modificationDate</key>
+			<date>2011-03-01T01:12:49Z</date>
+			<key>plainText</key>
+			<string>&lt;img src="http://placekitten.com/%fill:width%/%fill:height%" alt="KITTEH %fill:width%x%fill:height%" width="%fill:width%" height="%fill:height%" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>8</integer>
+			<key>uuidString</key>
+			<string>DF8219A5-343F-4655-95F8-C566C59F831F</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -445,7 +493,7 @@ print open("http://is.gd/api.php?longurl=#{CGI.escape(url)}").read unless url.ni
 			<key>label</key>
 			<string>Shorten clipboard (tinyurl)</string>
 			<key>lastUsed</key>
-			<date>2011-02-08T17:49:22Z</date>
+			<date>2011-02-28T17:23:16Z</date>
 			<key>modificationDate</key>
 			<date>2010-05-05T20:02:44Z</date>
 			<key>plainText</key>
