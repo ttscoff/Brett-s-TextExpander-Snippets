@@ -13,6 +13,106 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>,,rgba</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-20T16:51:50Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>RGBA</string>
+			<key>lastUsed</key>
+			<date>2011-03-20T16:52:50Z</date>
+			<key>modificationDate</key>
+			<date>2011-03-20T16:53:03Z</date>
+			<key>plainText</key>
+			<string>rgba(%fill:r%, %fill:g%, %fill:b%, %fill:float%)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E5A67B69-D8EB-4F70-A7BC-F449E3D63A72</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,scroll</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-01-14T15:21:11Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-02-07T16:42:38Z</date>
+			<key>modificationDate</key>
+			<date>2011-01-14T15:21:11Z</date>
+			<key>plainText</key>
+			<string>  ::-webkit-scrollbar {
+      width: 8px;
+  }
+  
+  ::-webkit-scrollbar:horizontal {
+      display: none;
+  }
+          
+  ::-webkit-scrollbar-track {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-width: 21px 0;
+      margin-left: -50px;
+  }
+
+  ::-webkit-scrollbar-track:disabled {
+      display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      border-width: 19px 0;
+      min-height: 40px;
+      opacity: 0.6;
+      background:#666;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+  }
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>3EBCBE06-2FD8-4F19-9C09-6101F1CABD0B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>!imp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-04T01:25:46Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>!important</string>
+			<key>lastUsed</key>
+			<date>2011-03-11T15:34:16Z</date>
+			<key>modificationDate</key>
+			<date>2011-03-04T01:26:08Z</date>
+			<key>plainText</key>
+			<string>!important</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>41</integer>
+			<key>uuidString</key>
+			<string>0D22EB75-7F1B-4771-8C03-6B42CD49D4A3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>,nth</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -23,7 +123,7 @@
 			<key>label</key>
 			<string>nth-of-type</string>
 			<key>lastUsed</key>
-			<date>2010-10-10T22:37:30Z</date>
+			<date>2011-02-24T02:31:32Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-13T15:07:15Z</date>
 			<key>plainText</key>
@@ -31,7 +131,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>uuidString</key>
 			<string>B65DAF3A-969D-43A2-9AFA-5EB34F4CAAAD</string>
 		</dict>
@@ -47,17 +147,17 @@
 			<key>label</key>
 			<string>CSS Box Shadow</string>
 			<key>lastUsed</key>
-			<date>2011-02-18T22:14:18Z</date>
+			<date>2011-03-20T16:53:58Z</date>
 			<key>modificationDate</key>
-			<date>2010-10-13T15:09:25Z</date>
+			<date>2011-03-20T16:51:35Z</date>
 			<key>plainText</key>
-			<string>-webkit-box-shadow: %fill:x%px %fill:y%px %fill:blur%px #%fill:color%;
--moz-box-shadow: %fill:x%px %fill:y%px %fill:blur%px #%fill:color%;
-box-shadow: %fill:x%px %fill:y%px %fill:blur%px #%fill:color%;</string>
+			<string>-webkit-box-shadow: %fill:x%px %fill:y%px %fill:blur%px %fill:color% %fill:inset%;
+-moz-box-shadow: %fill:x%px %fill:y%px %fill:blur%px %fill:color% %fill:inset%;
+box-shadow: %fill:x%px %fill:y%px %fill:blur%px %fill:color% %fill:inset%;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>3</integer>
+			<integer>10</integer>
 			<key>uuidString</key>
 			<string>33141176-7406-4132-98D9-B4E0B09105F6</string>
 		</dict>
@@ -73,7 +173,7 @@ box-shadow: %fill:x%px %fill:y%px %fill:blur%px #%fill:color%;</string>
 			<key>label</key>
 			<string>CSS Transition</string>
 			<key>lastUsed</key>
-			<date>2011-02-19T20:31:26Z</date>
+			<date>2011-03-10T15:55:47Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-13T15:07:22Z</date>
 			<key>plainText</key>
@@ -84,7 +184,7 @@ transition:%fill:type% %fill:seconds%s ease-in-out;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>14</integer>
+			<integer>25</integer>
 			<key>uuidString</key>
 			<string>AF741A2E-DE7A-4856-B8D3-15C74495B868</string>
 		</dict>
@@ -100,7 +200,7 @@ transition:%fill:type% %fill:seconds%s ease-in-out;</string>
 			<key>label</key>
 			<string>Rounded Corners</string>
 			<key>lastUsed</key>
-			<date>2011-02-07T21:44:50Z</date>
+			<date>2011-03-10T00:31:28Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-13T15:08:10Z</date>
 			<key>plainText</key>
@@ -110,7 +210,7 @@ border-radius: %fill:Amount%px;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>56</integer>
+			<integer>68</integer>
 			<key>uuidString</key>
 			<string>C878E042-DE86-45F7-BC3B-4248E71F7F55</string>
 		</dict>
@@ -126,7 +226,7 @@ border-radius: %fill:Amount%px;</string>
 			<key>label</key>
 			<string>Round bottom left</string>
 			<key>lastUsed</key>
-			<date>2010-11-10T13:42:26Z</date>
+			<date>2011-02-22T22:24:37Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-13T15:08:06Z</date>
 			<key>plainText</key>
@@ -136,7 +236,7 @@ border-radius-bottomleft: %fill:Amount%px;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>11</integer>
+			<integer>12</integer>
 			<key>uuidString</key>
 			<string>E2461EC3-3195-487B-9302-38D7B85AEB59</string>
 		</dict>
@@ -152,7 +252,7 @@ border-radius-bottomleft: %fill:Amount%px;</string>
 			<key>label</key>
 			<string>Round bottom right</string>
 			<key>lastUsed</key>
-			<date>2010-11-10T13:42:38Z</date>
+			<date>2011-03-07T14:20:22Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-13T15:08:02Z</date>
 			<key>plainText</key>
@@ -162,7 +262,7 @@ border-radius-bottomright: %fill:Amount%px;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>4</integer>
+			<integer>5</integer>
 			<key>uuidString</key>
 			<string>F9C3F4BA-EF5C-4EF9-A7EB-D2351DA259EA</string>
 		</dict>
@@ -178,7 +278,7 @@ border-radius-bottomright: %fill:Amount%px;</string>
 			<key>label</key>
 			<string>Round top left</string>
 			<key>lastUsed</key>
-			<date>2011-02-07T19:54:56Z</date>
+			<date>2011-03-07T12:34:29Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-13T15:07:58Z</date>
 			<key>plainText</key>
@@ -188,7 +288,7 @@ border-radius-topleft: %fill:Amount%px;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>12</integer>
+			<integer>14</integer>
 			<key>uuidString</key>
 			<string>63FC0328-31C2-45E7-99EE-B03ECE7DD353</string>
 		</dict>
@@ -204,7 +304,7 @@ border-radius-topleft: %fill:Amount%px;</string>
 			<key>label</key>
 			<string>Round top right</string>
 			<key>lastUsed</key>
-			<date>2011-02-07T19:55:02Z</date>
+			<date>2011-03-07T14:19:56Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-13T15:07:52Z</date>
 			<key>plainText</key>
@@ -214,7 +314,7 @@ border-radius-topright: %fill:Amount%px;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>6</integer>
+			<integer>8</integer>
 			<key>uuidString</key>
 			<string>6A9807A9-F7C3-4647-8D59-A71519BB69DA</string>
 		</dict>
