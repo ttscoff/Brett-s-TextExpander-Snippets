@@ -13,6 +13,164 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>,,enter</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-22T18:16:18Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-03-22T18:16:30Z</date>
+			<key>plainText</key>
+			<string>↩</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B750D90E-ED1B-42DA-AC7E-45DF6AC5E8AB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,end</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-22T18:16:00Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-03-22T18:16:05Z</date>
+			<key>plainText</key>
+			<string>↘</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EBA2FEBE-6031-41E3-9FA9-B58C691624A2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,home</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-22T18:15:48Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-03-22T18:15:55Z</date>
+			<key>plainText</key>
+			<string>↖</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>63E75D42-A837-44E1-ABAA-B2B44281E9AB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,esc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-22T18:15:33Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-03-22T18:15:33Z</date>
+			<key>plainText</key>
+			<string>⎋</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2EC6A445-EA25-4934-BF3A-1CC01F970CA4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,del</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-22T18:15:10Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-03-22T18:15:22Z</date>
+			<key>plainText</key>
+			<string>⌫</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B561B105-A707-4C3B-A374-95A07F4529E3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,tab</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-03-22T18:04:23Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-03-22T18:05:13Z</date>
+			<key>modificationDate</key>
+			<date>2011-03-22T18:04:51Z</date>
+			<key>plainText</key>
+			<string>⇥</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>06A39A33-77DA-4F6D-88BB-EF049D617E7C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,ctrl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2009-10-28T10:45:51Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>^</string>
+			<key>lastUsed</key>
+			<date>2011-03-22T18:10:19Z</date>
+			<key>modificationDate</key>
+			<date>2011-03-17T10:00:07Z</date>
+			<key>plainText</key>
+			<string>^</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>11</integer>
+			<key>uuidString</key>
+			<string>3D212B60-8326-46CD-A818-70DCE55FA796</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>,,line</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -141,7 +299,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>4</integer>
 			<key>uuidString</key>
 			<string>569B0B2B-9C97-489F-8500-30509A3EFFF6</string>
 		</dict>
@@ -209,7 +367,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>BC871A16-2175-4A11-A97E-8C2ADE738772</string>
 		</dict>
