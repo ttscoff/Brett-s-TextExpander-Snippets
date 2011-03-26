@@ -13,7 +13,7 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,enter</string>
+			<string>[[PREFIX]]enter</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -35,7 +35,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,end</string>
+			<string>[[PREFIX]]end</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -57,7 +57,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,home</string>
+			<string>[[PREFIX]]home</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -79,7 +79,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,esc</string>
+			<string>[[PREFIX]]esc</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -101,7 +101,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,del</string>
+			<string>[[PREFIX]]del</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -123,7 +123,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,tab</string>
+			<string>[[PREFIX]]tab</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -147,7 +147,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,ctrl</string>
+			<string>[[PREFIX]]ctrl</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -171,7 +171,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,line</string>
+			<string>[[PREFIX]]line</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -193,7 +193,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,fatright</string>
+			<string>[[PREFIX]]fatright</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -215,7 +215,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,starc</string>
+			<string>[[PREFIX]]starc</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -237,7 +237,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,starw</string>
+			<string>[[PREFIX]]starw</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -259,7 +259,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,starb</string>
+			<string>[[PREFIX]]starb</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -281,7 +281,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,nuke</string>
+			<string>[[PREFIX]]nuke</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -305,7 +305,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,skull</string>
+			<string>[[PREFIX]]skull</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -327,7 +327,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,smil</string>
+			<string>[[PREFIX]]smil</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -349,7 +349,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,heart</string>
+			<string>[[PREFIX]]heart</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -373,7 +373,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,ccw</string>
+			<string>[[PREFIX]]ccw</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -397,7 +397,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,comm</string>
+			<string>[[PREFIX]]comm</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -421,7 +421,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,down</string>
+			<string>[[PREFIX]]down</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -445,7 +445,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,left</string>
+			<string>[[PREFIX]]left</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -469,7 +469,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,opt</string>
+			<string>[[PREFIX]]opt</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -493,7 +493,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,right</string>
+			<string>[[PREFIX]]right</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -517,7 +517,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,shift</string>
+			<string>[[PREFIX]]shift</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -541,7 +541,7 @@
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,up</string>
+			<string>[[PREFIX]]up</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>

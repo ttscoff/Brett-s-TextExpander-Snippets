@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>1</integer>
+		<key>groupName</key>
+		<string>Tools</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]-</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-30T03:59:07Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Hyphenate clipboard</string>
+			<key>lastUsed</key>
+			<date>2010-10-27T14:58:18Z</date>
+			<key>modificationDate</key>
+			<date>2010-05-07T19:14:33Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby
+
+clip = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}
+print clip.gsub(/\b\s\b/,'-')</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>19</integer>
+			<key>uuidString</key>
+			<string>7DF920C1-6B06-4B7F-BA80-19C67C5637B0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]dummy</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-08-03T18:45:58Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Dummy Image</string>
+			<key>lastUsed</key>
+			<date>2011-03-01T01:14:23Z</date>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:08:58Z</date>
+			<key>plainText</key>
+			<string>&lt;img src="http://placehold.it/%fill:width%x%fill:height%/333333/dddddd&amp;text=%fill:title%" alt="%fill:title%" width="%fill:width%" height="%fill:height%" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>8</integer>
+			<key>uuidString</key>
+			<string>91FEE5DC-C0A0-4F79-A5F7-71963F28BDBD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]kittyg</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-08-03T18:45:58Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Kitty Placeholder - Grey</string>
+			<key>lastUsed</key>
+			<date>2011-03-01T01:13:08Z</date>
+			<key>modificationDate</key>
+			<date>2011-03-01T01:12:44Z</date>
+			<key>plainText</key>
+			<string>&lt;img src="http://placekitten.com/g/%fill:width%/%fill:height%" alt="KITTEH %fill:width%x%fill:height%" width="%fill:width%" height="%fill:height%" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>8</integer>
+			<key>uuidString</key>
+			<string>B3728814-C136-406B-995B-E97AD43C2423</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]kittyc</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-08-03T18:45:58Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Kitty Placeholder - Color</string>
+			<key>lastUsed</key>
+			<date>2011-03-01T01:14:49Z</date>
+			<key>modificationDate</key>
+			<date>2011-03-01T01:12:49Z</date>
+			<key>plainText</key>
+			<string>&lt;img src="http://placekitten.com/%fill:width%/%fill:height%" alt="KITTEH %fill:width%x%fill:height%" width="%fill:width%" height="%fill:height%" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>8</integer>
+			<key>uuidString</key>
+			<string>DF8219A5-343F-4655-95F8-C566C59F831F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]email</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-05-08T00:57:58Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Encode email address</string>
+			<key>lastUsed</key>
+			<date>2010-05-08T01:00:42Z</date>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:08:46Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+clipboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+print "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}" if clipboard =~ /\A(mailto:)?(.*?@.*\..*)\z/</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>2A222F67-844F-42E4-915D-1B2B337EE091</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]href</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2009-10-28T10:50:26Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Clipboard HTML Link</string>
+			<key>lastUsed</key>
+			<date>2010-06-07T12:39:55Z</date>
+			<key>modificationDate</key>
+			<date>2010-05-05T20:04:04Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\A(mailto:)?(.*?@.*\..*)\z}:
+    "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}"
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>26</integer>
+			<key>uuidString</key>
+			<string>6E8F0D03-3DFD-4079-8EC5-06D7FD3CB484</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]jq</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-11-10T09:03:04Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>jQuery Wrapper</string>
+			<key>lastUsed</key>
+			<date>2011-02-19T01:31:23Z</date>
+			<key>modificationDate</key>
+			<date>2010-11-10T09:03:44Z</date>
+			<key>plainText</key>
+			<string>(function($){%|})(jQuery);</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>13</integer>
+			<key>uuidString</key>
+			<string>BA3B1F24-FE34-4377-8024-2D00145F5533</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]mdr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-05-08T00:39:31Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Paste Markdown References</string>
+			<key>lastUsed</key>
+			<date>2010-10-13T15:35:06Z</date>
+			<key>modificationDate</key>
+			<date>2010-10-13T15:08:23Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku
+=begin
+Parses the clipboard for urls
+if it finds 1 or more, paste them as a list of markdown references
+if the links in the clipboard are already in markdown reference format, it preserves their names and sorts the references
+=end
+
+clipboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+links = clipboard.scan /(?:\[([^\]]+)\]\: )?(https?:\/\/[^ \n\r"]+)/m
+norepeat = []
+output = []
+exit if links.nil?
+
+links.each {|url|
+  fresh = true
+  output.each {|a|
+    fresh = false if a['link'] == url[1]
+  }
+  next unless fresh
+
+	if url[0].nil?
+		domain = url[1].match(/https?:\/\/([^\/]+)/)
+		parts = domain[1].split('.')
+		name = case parts.length
+			when 1,2: parts[0]
+			else parts[1]
+		end
+	else
+		name = url[0]
+	end
+
+  name = "itunes" if url[1] =~ /(itunes|phobos).apple.com/
+
+	while norepeat.include? name
+		name = name =~ / ?[0-9]$/ ? name.next! : name = name + " 2"
+	end
+	output &lt;&lt; {'title' =&gt; name, 'link' =&gt; url[1] }
+	norepeat.push name
+}
+
+output.sort {|a,b| a['title'] &lt;=&gt; b['title']}.each { |x| puts "[#{x['title']}]: #{x['link']}" }</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>5</integer>
+			<key>uuidString</key>
+			<string>543CC81E-F03B-42DF-A6E1-7F5D17BF1D1C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]mlink</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-03-13T14:09:14Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Markdown Link</string>
+			<key>lastUsed</key>
+			<date>2011-02-17T16:17:00Z</date>
+			<key>modificationDate</key>
+			<date>2011-02-17T16:17:37Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\A(mailto:)?(.*?@.*\..*)\z}:
+    "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}"
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+print %Q{[%fill:Link Text%](#{url})}</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>24</integer>
+			<key>uuidString</key>
+			<string>E63A4AC2-4E3B-4DA3-9C2C-9A0348E1F2A9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]sub</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-29T18:35:28Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Shorten clipboard (bit.ly)</string>
+			<key>lastUsed</key>
+			<date>2010-12-14T21:28:50Z</date>
+			<key>modificationDate</key>
+			<date>2010-10-18T23:42:18Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+require 'open-uri'
+require 'cgi'
+
+USER_NAME = 'ttscoff' # Your login name
+API_KEY = 'R_4a4c6a9421a9e73a4682268eca599be1' # http://bit.ly/a/your_api_key
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+res = open("http://api.bit.ly/v3/shorten?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;longUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
+
+begin
+  print res unless res.nil?
+rescue
+  exit
+end</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>23</integer>
+			<key>uuidString</key>
+			<string>E9B7CD10-52FB-469D-902E-ED17BF227E72</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]sug</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-29T18:35:28Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Shorten clipboard (go.)</string>
+			<key>lastUsed</key>
+			<date>2010-05-07T19:04:20Z</date>
+			<key>modificationDate</key>
+			<date>2010-05-05T20:02:34Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+require 'net/http'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+
+input = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+exit if input.nil?
+http = Net::HTTP.new('to.')
+path = '/'
+data = "url=#{CGI.escape(input.strip)}"
+headers = {'Content-Type' =&gt; 'application/x-www-form-urlencoded'}
+resp, data = http.post(path, data, headers)
+if resp.code.to_i == 200
+  print data.split(/value="/)[1].split(/"/)[0]
+else
+  print input
+end</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>7</integer>
+			<key>uuidString</key>
+			<string>DB17EAC0-7C04-4C31-A540-7BA19291AE12</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]sui</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-29T18:35:28Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Shorten clipboard (is.gd)</string>
+			<key>lastUsed</key>
+			<date>2010-12-14T21:28:39Z</date>
+			<key>modificationDate</key>
+			<date>2010-05-05T20:02:39Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+print open("http://is.gd/api.php?longurl=#{CGI.escape(url)}").read unless url.nil?</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>20</integer>
+			<key>uuidString</key>
+			<string>724060A0-1041-4CDB-87BD-70D0D8C9BE93</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]sut</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-29T18:35:28Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Shorten clipboard (tinyurl)</string>
+			<key>lastUsed</key>
+			<date>2011-02-28T17:23:16Z</date>
+			<key>modificationDate</key>
+			<date>2010-05-05T20:02:44Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+print open("http://tinyurl.com/api-create.php?url=#{CGI.escape(url)}").read unless url.nil?</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>34</integer>
+			<key>uuidString</key>
+			<string>E20D335C-5408-4340-86FB-BA964B6078F8</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]url</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2009-10-28T10:54:02Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Make URL</string>
+			<key>lastUsed</key>
+			<date>2010-05-08T04:34:22Z</date>
+			<key>modificationDate</key>
+			<date>2010-05-08T00:58:24Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -wKU
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\A(mailto:)?(.*?@.*\..*)\z}:
+    "mailto:#{$2}"
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+print url unless url.nil?</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>28</integer>
+			<key>uuidString</key>
+			<string>A1B1C5EA-9ECD-48E0-A19F-60281D7CA491</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>#!b</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-26T12:40:27Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Hashbang, Bash</string>
+			<key>modificationDate</key>
+			<date>2010-05-08T01:02:32Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env bash</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EC854A0B-6026-468C-BECC-4D1F7CCFD0DD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>#!o</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-04-26T12:41:23Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Hashbang, osascript</string>
+			<key>modificationDate</key>
+			<date>2010-05-08T01:02:40Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env osascript</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D6DD8684-7043-49F1-B591-974DF71134B1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>#!r</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-03-13T14:10:51Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Hashbang, Ruby</string>
+			<key>lastUsed</key>
+			<date>2010-11-29T09:26:55Z</date>
+			<key>modificationDate</key>
+			<date>2010-05-08T01:02:46Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby -rjcode -Ku</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>5130B2BB-C47F-4BCC-9000-376F86A1123D</string>
+		</dict>
+	</array>
+</dict>
+</plist>
