@@ -2,6 +2,10 @@
 
 Just collecting a few of my favorite TextExpander snippets here, feel free to use. I have these set to expand after a Tab, but they should work with just about any expansion settings. Related commands all have similar beginnings to make using the "Suggest Completions" feature easier.
 
+This repo now includes the base system I'm using to generate downloads with custom snippets. The files to be customized are named with the extension ".tedist" and the prefixes in the "abbreviation" string of the plist are replaced with "[[PREFIX]]". The rest is handled by the php files.
+
+`getsnippets.php` is called through ajax and serves as an example for reading the snippets and shortcuts from the plist. Returns json output for the file specified in the query string with "file=groupname" (no extension).
+
 ### Snippets ###
 
 #### Tools.textexpander ####
