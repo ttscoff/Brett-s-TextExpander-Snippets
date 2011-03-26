@@ -1,4 +1,7 @@
-/* @override http://brettterpstra.dev/share/te-snippets/css/style.css?v=2 */
+/* @override 
+	http://brettterpstra.dev/share/te-snippets/css/style.css?v=2
+	http://brettterpstra.com/share/te-snippets/css/style.css?v=2
+*/
 /* 
   HTML5 ✰ Boilerplate 
   
@@ -442,7 +445,6 @@ body {
   width:100%;
   text-align:center;
   font-weight:bold;
-  padding:10px;
   margin-bottom:10px;
   background:#f5f5ed;
   -moz-border-radius:6px;
