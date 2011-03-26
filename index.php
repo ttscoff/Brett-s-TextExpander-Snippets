@@ -53,9 +53,12 @@
       </form>
       <div id="responsediv">
         <p>
-          Your current url is: <input type="text" id="outputurl"></input>
+          Your custom url is: <input type="text" id="outputurl">
         </p>
-        <p>Select a group and enter your preferred prefix for the shortcuts assigned to each snippet, e.g. ";" or ",,", etc.</p>
+        <p>
+          <a id="download" href="#">Download .textexpander file</a>
+        </p>
+        <p>Select a group and enter your preferred prefix for the shortcuts assigned to each snippet. The resulting url may be downloaded as a custom .textexpander file, or used with TextExpander's "Install from URL" feature. Using the latter will provide automatic updates if the group is added to or changed, custom prefixes are preserved.</p>
       </div>
     </div>
     <div id="preview">

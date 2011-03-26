@@ -9,6 +9,7 @@
       .replace(/%grp%/,escape(group))
       .replace(/%pre%/,escape(prefix));
     $('#outputurl').val(url);
+    $('#download').attr('href',url);
     $.getJSON('getsnippets.php?file='+$('#group').val()+'.tedist', function(data) {
       var items = ['<tr><th>Name</th><th>Shortcut</th></tr>'];
 

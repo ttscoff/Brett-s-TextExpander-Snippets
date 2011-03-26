@@ -419,9 +419,8 @@ body {
 }
 #responsediv {
   width:700px;
-  text-align:center;
-  margin:0 auto;
   font-weight:bold;
+  margin:0 auto;
   color:#776e6a;
   margin-bottom:30px;
 }
@@ -436,6 +435,31 @@ body {
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
   border-radius:6px;
+}
+a#download {
+  display:block;
+  width:200px;
+  margin:20px auto;
+  padding:10px;
+  color:#fbffea;
+  background:#919173;
+  text-decoration:none;
+  text-align:center;
+  line-height:1.5em;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  -webkit-box-shadow:1px 1px 6px rgba(73, 73, 36, .4);
+  -moz-box-shadow:1px 1px 6px rgba(73, 73, 36, .4);
+  box-shadow:1px 1px 6px rgba(73, 73, 36, .4);
+  opacity:.5;
+  -webkit-transition:opacity .2s ease-in-out;
+-moz-transition:opacity .2s ease-in-out;
+-o-transition:opacity .2s ease-in-out;
+transition:opacity .2s ease-in-out;
+}
+#download:hover {
+  opacity:1;
 }
 footer {
   position:absolute;
@@ -452,12 +476,12 @@ input:focus {
   text-align:left;
   border-bottom:solid 1px;
   border-color:#bebea5;
-  padding:5px 0;
-  font-size:1.2em;
+  padding:5px;
+  background-color:#ddddd5;
 }
 #preview td {
   width:350px;
-  padding:5px 10px 5px 0;
+  padding:5px 10px 5px 5px;
   padding-bottom:5px;
   border-bottom:dashed 1px ;
   border-color:#c5c5ad;
