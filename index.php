@@ -1,5 +1,6 @@
 <?php
   $group = (isset($_REQUEST['group'])) ? $_REQUEST['group'] : '';
+  $prefix = (isset($_REQUEST['prefix'])) ? $_REQUEST['prefix'] : ',,';
 ?>
 <!DOCTYPE html>  
 
@@ -47,7 +48,7 @@
             } ?>
           </select>
           <label>Prefix</label>
-          <input type="text" name="prefix" id="prefix" value=",," />
+          <input type="text" name="prefix" id="prefix" value="<?php echo $prefix; ?>" />
         </div>
       </form>
       <div id="responsediv">
@@ -57,7 +58,9 @@
         <p>Select a group and enter your preferred prefix for the shortcuts assigned to each snippet, e.g. ";" or ",,", etc.</p>
       </div>
     </div>
-    
+    <div id="preview">
+      
+    </div>
     <footer>
       <p>
         &copy;2011 Brett Terpstra. All rights reserved.

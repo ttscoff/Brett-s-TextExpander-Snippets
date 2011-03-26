@@ -9,6 +9,15 @@
       .replace(/%grp%/,escape(group))
       .replace(/%pre%/,escape(prefix));
     $('#outputurl').val(url);
+    $.getJSON('getsnippets.php?file='+$('#group').val()+'.tedist', function(data) {
+      var items = ['<tr><th>Name</th><th>Shortcut</th></tr>'];
+
+      $.each(data, function(snippet) {
+        items.push('<tr><td class="label">' + data[snippet].label + '</td><td class="shortcut">' + data[snippet].shortcut.replace(/\[\[PREFIX\]\]/,$('#prefix').val()) + '</td></tr>');
+      });
+      
+      $('#preview').html($('<table>', {'id': 'shortcut-table',html: items.join('')}));
+    });
   }
   updateURL();
   $('#prefixform').change(function(ev){

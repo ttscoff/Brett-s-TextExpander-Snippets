@@ -6,7 +6,7 @@ if (isset($_REQUEST['group']) && isset($_REQUEST['prefix'])) {
   $handle = fopen($filename, "r");
   $contents = fread($handle, filesize($filename));
   fclose($handle);
-  $output = preg_replace('/\[\[PREFIX\]\]/',$prefix,$contents);
+  $output = preg_replace('/\[\[PREFIX\]\]/',preg_replace('/\\\\/','\\\\\\\\',$prefix),$contents);
   header("Pragma: no-cache");
   header("Expires: 0");
   header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
