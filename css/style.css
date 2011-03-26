@@ -385,7 +385,6 @@ body {
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
   border-radius:10px;
-  height:300px;
   color:#4b4b3e;
 }
 #container h1 {
@@ -424,6 +423,7 @@ body {
   margin:0 auto;
   font-weight:bold;
   color:#776e6a;
+  margin-bottom:30px;
 }
 #outputurl {
   display:block;
@@ -443,4 +443,22 @@ footer {
   text-align:center;
   width:700px;
   color:rgba(43,43,43,0.5);
+}
+input:focus {
+  background-color:red;
+  color:green;
+}
+#preview th {
+  text-align:left;
+  border-bottom:solid 1px;
+  border-color:#bebea5;
+  padding:5px 0;
+  font-size:1.2em;
+}
+#preview td {
+  width:350px;
+  padding:5px 10px 5px 0;
+  padding-bottom:5px;
+  border-bottom:dashed 1px ;
+  border-color:#c5c5ad;
 }
