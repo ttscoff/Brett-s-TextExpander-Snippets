@@ -31,6 +31,7 @@
 
   <div id="container">
     <header>
+      <p id="backbuttons"><a href="http://brettterpstra.com/project/textexpander-tools/">TextExpander project</a> | <a href="http://brettterpstra.com">Brett Terpstra</a></p>
       <h1>Create a custom TextExpander URL</h1>
     </header>
     

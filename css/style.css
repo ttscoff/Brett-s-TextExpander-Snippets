@@ -387,6 +387,19 @@ body {
   border-radius:10px;
   color:#4b4b3e;
 }
+#backbuttons {
+  position:absolute;
+  top:-20px;
+  left:5px;
+}
+#backbuttons a {
+  text-decoration:none;
+  font-weight:bold;
+  color:#8c9c9c;
+}
+#backbuttons a:hover {
+  color:#6d9c9c;
+}
 #container h1 {
   font-size:21px;
   text-align:center;
