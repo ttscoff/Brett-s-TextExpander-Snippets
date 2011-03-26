@@ -99,6 +99,12 @@
     s.parentNode.insertBefore(g, s);
    })(document, 'script');
   </script>
+  <script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+  <script type="text/javascript">
+  try {
+  reinvigorate.track("48372-lfapv5kwv9");
+  } catch(err) {}
+  </script>
   <?php } ?>
 </body>
 </html>
