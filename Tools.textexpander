@@ -5,12 +5,142 @@
 	<key>groupInfo</key>
 	<dict>
 		<key>expandAfterMode</key>
-		<integer>1</integer>
+		<integer>2</integer>
 		<key>groupName</key>
 		<string>Tools</string>
 	</dict>
 	<key>snippetsTE2</key>
 	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,avg</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-02T03:14:39Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Average numbers in clipboard</string>
+			<key>lastUsed</key>
+			<date>2011-09-02T03:18:11Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-02T03:17:10Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby
+
+def ts( number )
+  number.to_s.reverse.scan(/(?:\d*\.)?\d{1,3}-?/).join(',').reverse
+end
+
+def do_average(text)
+  arr = text.scan(/\.?\d[\d,]+(?:\.\d+)?/).map{|line| 
+    line.gsub(/[^\d\.]/,'').to_f
+  }.sort
+
+  return ts(arr.inject(0.0) { |sum,el| sum + el } / arr.size ) unless arr.empty?
+end
+
+
+print do_average %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B9DF76C5-53EE-4146-9FF0-4B8B53F3B50A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,shtest</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-08-20T12:21:26Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-08-20T12:22:08Z</date>
+			<key>modificationDate</key>
+			<date>2011-08-20T12:21:53Z</date>
+			<key>plainText</key>
+			<string>echo %fill:name%</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>70A68A35-1111-42CD-B54E-46F565E8D3FD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,bm</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-07-12T08:04:04Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-07-12T08:05:19Z</date>
+			<key>modificationDate</key>
+			<date>2011-07-12T08:04:55Z</date>
+			<key>plainText</key>
+			<string>@bookmark("%fill:title%",[%fill:comma separated tags%])</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>6DACB11B-FAC1-4082-8D3F-8D0AD98D0611</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,bash</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-06-22T20:47:50Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-06-22T20:49:48Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+#
+#   Author: Brett Terpstra
+#       Web: http://brettterpstra.com
+#      Date:  %Y-%m-%d
+#
+#   Purpose: %fill:name%
+
+SOURCE="${HOME}/.source"
+
+if [ -r "${SOURCE}" ]
+then
+    . "${SOURCE}"
+else
+    echo "$0: no ${SOURCE} found"
+fi
+
+%|
+
+
+exit 0
+# EOF</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>14E09105-EB4E-4995-9BA1-92A8F67F6F5C</string>
+		</dict>
 		<dict>
 			<key>abbreviation</key>
 			<string>,,-</string>
@@ -25,7 +155,7 @@
 			<key>lastUsed</key>
 			<date>2010-10-27T14:58:18Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-07T19:14:33Z</date>
+			<date>2011-04-23T09:37:20Z</date>
 			<key>plainText</key>
 			<string>#!/usr/bin/env ruby
 
@@ -58,7 +188,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>8</integer>
+			<integer>9</integer>
 			<key>uuidString</key>
 			<string>91FEE5DC-C0A0-4F79-A5F7-71963F28BDBD</string>
 		</dict>
@@ -74,7 +204,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>label</key>
 			<string>Kitty Placeholder - Grey</string>
 			<key>lastUsed</key>
-			<date>2011-03-01T01:13:08Z</date>
+			<date>2011-04-23T09:00:09Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-01T01:12:44Z</date>
 			<key>plainText</key>
@@ -82,7 +212,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>8</integer>
+			<integer>11</integer>
 			<key>uuidString</key>
 			<string>B3728814-C136-406B-995B-E97AD43C2423</string>
 		</dict>
@@ -98,7 +228,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>label</key>
 			<string>Kitty Placeholder - Color</string>
 			<key>lastUsed</key>
-			<date>2011-03-01T01:14:49Z</date>
+			<date>2011-03-01T01:30:09Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-01T01:12:49Z</date>
 			<key>plainText</key>
@@ -106,7 +236,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>8</integer>
+			<integer>13</integer>
 			<key>uuidString</key>
 			<string>DF8219A5-343F-4655-95F8-C566C59F831F</string>
 		</dict>
@@ -195,7 +325,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>label</key>
 			<string>jQuery Wrapper</string>
 			<key>lastUsed</key>
-			<date>2011-02-19T01:31:23Z</date>
+			<date>2011-07-12T06:30:53Z</date>
 			<key>modificationDate</key>
 			<date>2010-11-10T09:03:44Z</date>
 			<key>plainText</key>
@@ -203,7 +333,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>13</integer>
+			<integer>31</integer>
 			<key>uuidString</key>
 			<string>BA3B1F24-FE34-4377-8024-2D00145F5533</string>
 		</dict>
@@ -221,16 +351,16 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>lastUsed</key>
 			<date>2010-10-13T15:35:06Z</date>
 			<key>modificationDate</key>
-			<date>2010-10-13T15:08:23Z</date>
+			<date>2011-04-23T09:58:24Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby -rjcode -Ku
+			<string>#!/usr/bin/env ruby
 =begin
 Parses the clipboard for urls
 if it finds 1 or more, paste them as a list of markdown references
 if the links in the clipboard are already in markdown reference format, it preserves their names and sorts the references
 =end
 
-clipboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+clipboard = "%x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip"
 links = clipboard.scan /(?:\[([^\]]+)\]\: )?(https?:\/\/[^ \n\r"]+)/m
 norepeat = []
 output = []
@@ -329,7 +459,7 @@ print %Q{[%fill:Link Text%](#{url})}</string>
 			<key>label</key>
 			<string>Shorten clipboard (bit.ly)</string>
 			<key>lastUsed</key>
-			<date>2010-12-14T21:28:50Z</date>
+			<date>2011-05-05T13:28:30Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-18T23:42:18Z</date>
 			<key>plainText</key>
@@ -371,7 +501,7 @@ end</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>23</integer>
+			<integer>25</integer>
 			<key>uuidString</key>
 			<string>E9B7CD10-52FB-469D-902E-ED17BF227E72</string>
 		</dict>
@@ -493,7 +623,7 @@ print open("http://is.gd/api.php?longurl=#{CGI.escape(url)}").read unless url.ni
 			<key>label</key>
 			<string>Shorten clipboard (tinyurl)</string>
 			<key>lastUsed</key>
-			<date>2011-02-28T17:23:16Z</date>
+			<date>2011-04-20T11:13:11Z</date>
 			<key>modificationDate</key>
 			<date>2010-05-05T20:02:44Z</date>
 			<key>plainText</key>
@@ -525,7 +655,7 @@ print open("http://tinyurl.com/api-create.php?url=#{CGI.escape(url)}").read unle
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>34</integer>
+			<integer>38</integer>
 			<key>uuidString</key>
 			<string>E20D335C-5408-4340-86FB-BA964B6078F8</string>
 		</dict>
@@ -541,9 +671,9 @@ print open("http://tinyurl.com/api-create.php?url=#{CGI.escape(url)}").read unle
 			<key>label</key>
 			<string>Make URL</string>
 			<key>lastUsed</key>
-			<date>2010-05-08T04:34:22Z</date>
+			<date>2011-04-23T09:06:48Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-08T00:58:24Z</date>
+			<date>2011-04-23T09:06:57Z</date>
 			<key>plainText</key>
 			<string>#!/usr/bin/env ruby -wKU
 
@@ -571,7 +701,7 @@ print url unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>28</integer>
+			<integer>29</integer>
 			<key>uuidString</key>
 			<string>A1B1C5EA-9ECD-48E0-A19F-60281D7CA491</string>
 		</dict>
@@ -586,6 +716,8 @@ print url unless url.nil?</string>
 			<integer>0</integer>
 			<key>label</key>
 			<string>Hashbang, Bash</string>
+			<key>lastUsed</key>
+			<date>2011-03-28T11:10:05Z</date>
 			<key>modificationDate</key>
 			<date>2010-05-08T01:02:32Z</date>
 			<key>plainText</key>
@@ -593,7 +725,7 @@ print url unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>EC854A0B-6026-468C-BECC-4D1F7CCFD0DD</string>
 		</dict>
@@ -631,17 +763,141 @@ print url unless url.nil?</string>
 			<key>label</key>
 			<string>Hashbang, Ruby</string>
 			<key>lastUsed</key>
-			<date>2010-11-29T09:26:55Z</date>
+			<date>2011-06-09T17:26:44Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-08T01:02:46Z</date>
+			<date>2011-04-23T08:51:22Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby -rjcode -Ku</string>
+			<string>#!/usr/bin/env ruby</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>3</integer>
+			<integer>4</integer>
 			<key>uuidString</key>
 			<string>5130B2BB-C47F-4BCC-9000-376F86A1123D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,qtip</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-05-20T08:42:07Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Quick Tip Boilerplate brettterpstra.com</string>
+			<key>modificationDate</key>
+			<date>2011-05-20T08:42:32Z</date>
+			<key>plainText</key>
+			<string>*[Quick tips](http://brettterpstra.com/tag/quicktip/) are random posts regarding something I discovered on my way to something bigger. They usually get longer than "quick" would imply, for which I refuse to apologize.*</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5DEDD2E8-9CF4-4A51-8712-A92869E9A169</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,blogend</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-06-24T17:09:31Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-06-24T17:09:31Z</date>
+			<key>plainText</key>
+			<string>&lt;!-- END --&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2C948257-1A1C-4263-BF62-C5FF81DC8B7C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,bloghead</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-06-24T17:15:38Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-06-24T17:15:45Z</date>
+			<key>modificationDate</key>
+			<date>2011-06-24T17:15:38Z</date>
+			<key>plainText</key>
+			<string>Title: untitled
+Type: Blog Post (Markdown)
+Blog: BrettTerpstra
+Keywords: 
+Status: draft
+Pings: On
+Comments: On
+Category: 
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>DB24A9A3-4296-46FC-B7D4-3E026A6BD521</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,linkme</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-06-24T17:31:56Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-06-24T17:32:54Z</date>
+			<key>modificationDate</key>
+			<date>2011-06-24T17:31:56Z</date>
+			<key>plainText</key>
+			<string>(///LINK///)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>BCB1820B-7B40-45FE-BEBA-94A00A8174E5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,sera</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-08-11T14:53:11Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-08-11T14:54:04Z</date>
+			<key>modificationDate</key>
+			<date>2011-08-11T14:53:11Z</date>
+			<key>plainText</key>
+			<string>v;p2/g9YzPHo</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>ACB45B1B-D8E8-4DC0-905B-2FF977128B3B</string>
 		</dict>
 	</array>
 </dict>
