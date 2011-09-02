@@ -13,6 +13,32 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>[[PREFIX]]tid</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-06-06T13:52:20Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>AS Text Item Delimiter</string>
+			<key>lastUsed</key>
+			<date>2011-05-23T06:50:30Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-02T04:06:29Z</date>
+			<key>plainText</key>
+			<string>set {astid, AppleScript's text item delimiters} to {AppleScript's text item delimiters, "%|"}
+
+set AppleScript's text item delimiters to astid</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>11</integer>
+			<key>uuidString</key>
+			<string>B673B52A-5F38-4862-8CDC-B856BBC3E1EE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>[[PREFIX]]avg</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -49,97 +75,6 @@ print do_average %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.st
 			<integer>0</integer>
 			<key>uuidString</key>
 			<string>B9DF76C5-53EE-4146-9FF0-4B8B53F3B50A</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>[[PREFIX]]shtest</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2011-08-20T12:21:26Z</date>
-			<key>flags</key>
-			<integer>2</integer>
-			<key>label</key>
-			<string></string>
-			<key>lastUsed</key>
-			<date>2011-08-20T12:22:08Z</date>
-			<key>modificationDate</key>
-			<date>2011-08-20T12:21:53Z</date>
-			<key>plainText</key>
-			<string>echo %fill:name%</string>
-			<key>snippetType</key>
-			<integer>3</integer>
-			<key>useCount</key>
-			<integer>1</integer>
-			<key>uuidString</key>
-			<string>70A68A35-1111-42CD-B54E-46F565E8D3FD</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>[[PREFIX]]bm</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2011-07-12T08:04:04Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string></string>
-			<key>lastUsed</key>
-			<date>2011-07-12T08:05:19Z</date>
-			<key>modificationDate</key>
-			<date>2011-07-12T08:04:55Z</date>
-			<key>plainText</key>
-			<string>@bookmark("%fill:title%",[%fill:comma separated tags%])</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>1</integer>
-			<key>uuidString</key>
-			<string>6DACB11B-FAC1-4082-8D3F-8D0AD98D0611</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>[[PREFIX]]bash</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2011-06-22T20:47:50Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string></string>
-			<key>modificationDate</key>
-			<date>2011-06-22T20:49:48Z</date>
-			<key>plainText</key>
-			<string>#!/bin/bash
-#
-#   Author: Brett Terpstra
-#       Web: http://brettterpstra.com
-#      Date:  %Y-%m-%d
-#
-#   Purpose: %fill:name%
-
-SOURCE="${HOME}/.source"
-
-if [ -r "${SOURCE}" ]
-then
-    . "${SOURCE}"
-else
-    echo "$0: no ${SOURCE} found"
-fi
-
-%|
-
-
-exit 0
-# EOF</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>14E09105-EB4E-4995-9BA1-92A8F67F6F5C</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -785,11 +720,11 @@ print url unless url.nil?</string>
 			<key>flags</key>
 			<integer>0</integer>
 			<key>label</key>
-			<string></string>
+			<string>Link reminder</string>
 			<key>lastUsed</key>
 			<date>2011-06-24T17:32:54Z</date>
 			<key>modificationDate</key>
-			<date>2011-06-24T17:31:56Z</date>
+			<date>2011-09-02T04:01:52Z</date>
 			<key>plainText</key>
 			<string>(///LINK///)</string>
 			<key>snippetType</key>

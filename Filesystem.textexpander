@@ -13,6 +13,100 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>~"apps</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-02-08T17:21:52Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>App Support, Quoted</string>
+			<key>lastUsed</key>
+			<date>2011-04-23T06:57:02Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-02T04:10:58Z</date>
+			<key>plainText</key>
+			<string>"~/Library/Application Support/"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>34</integer>
+			<key>uuidString</key>
+			<string>A00D1AF3-D30A-4522-9E26-9ED710373239</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>~"tms</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-04-23T08:53:30Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>TM Bundles, quoted</string>
+			<key>lastUsed</key>
+			<date>2011-04-23T09:01:45Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-02T04:11:03Z</date>
+			<key>plainText</key>
+			<string>"~/Library/Application Support/TextMate/Bundles"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>BD8C0E02-2241-40B1-8B19-FCD72ECFB1F7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>~tms</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-04-23T08:52:47Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>TM Bundles</string>
+			<key>modificationDate</key>
+			<date>2011-09-02T04:10:02Z</date>
+			<key>plainText</key>
+			<string>~/Library/Application Support/TextMate/Bundles</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2AF229FC-ED14-483D-BD5D-AB568CA5F4EA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>~si</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-04-23T08:52:00Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Sites</string>
+			<key>lastUsed</key>
+			<date>2011-04-25T00:30:27Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-02T04:10:06Z</date>
+			<key>plainText</key>
+			<string>~/Sites</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>0B60516B-0DA1-4422-BE84-0D7AB12EB89A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>~apps</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -21,17 +115,17 @@
 			<key>flags</key>
 			<integer>0</integer>
 			<key>label</key>
-			<string></string>
+			<string>App Support</string>
 			<key>lastUsed</key>
-			<date>2011-03-20T17:00:23Z</date>
+			<date>2011-07-04T19:39:55Z</date>
 			<key>modificationDate</key>
-			<date>2011-03-20T16:40:25Z</date>
+			<date>2011-09-02T04:10:11Z</date>
 			<key>plainText</key>
 			<string>~/Library/Application Support/</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>64</integer>
 			<key>uuidString</key>
 			<string>7BF2069D-E7F5-4A5C-AC0E-4BA91BCAF44C</string>
 		</dict>
@@ -45,15 +139,17 @@
 			<key>flags</key>
 			<integer>0</integer>
 			<key>label</key>
-			<string></string>
+			<string>User Library</string>
+			<key>lastUsed</key>
+			<date>2011-05-20T11:27:22Z</date>
 			<key>modificationDate</key>
-			<date>2011-03-20T16:40:39Z</date>
+			<date>2011-09-02T04:10:33Z</date>
 			<key>plainText</key>
 			<string>~/Library/</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>8</integer>
 			<key>uuidString</key>
 			<string>91E81974-DB96-4FE0-97F3-C95B33344819</string>
 		</dict>
@@ -67,15 +163,17 @@
 			<key>flags</key>
 			<integer>0</integer>
 			<key>label</key>
-			<string></string>
+			<string>User Scripts</string>
+			<key>lastUsed</key>
+			<date>2011-06-15T06:39:58Z</date>
 			<key>modificationDate</key>
-			<date>2011-03-20T16:40:57Z</date>
+			<date>2011-09-02T04:10:27Z</date>
 			<key>plainText</key>
 			<string>~/Library/Scripts/</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>13</integer>
 			<key>uuidString</key>
 			<string>F6DE8F40-78C1-44EA-A213-C4C4CE17188A</string>
 		</dict>
