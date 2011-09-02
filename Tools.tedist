@@ -777,82 +777,6 @@ print url unless url.nil?</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>[[PREFIX]]qtip</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2011-05-20T08:42:07Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>Quick Tip Boilerplate brettterpstra.com</string>
-			<key>modificationDate</key>
-			<date>2011-05-20T08:42:32Z</date>
-			<key>plainText</key>
-			<string>*[Quick tips](http://brettterpstra.com/tag/quicktip/) are random posts regarding something I discovered on my way to something bigger. They usually get longer than "quick" would imply, for which I refuse to apologize.*</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>5DEDD2E8-9CF4-4A51-8712-A92869E9A169</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>[[PREFIX]]blogend</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2011-06-24T17:09:31Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string></string>
-			<key>modificationDate</key>
-			<date>2011-06-24T17:09:31Z</date>
-			<key>plainText</key>
-			<string>&lt;!-- END --&gt;</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>0</integer>
-			<key>uuidString</key>
-			<string>2C948257-1A1C-4263-BF62-C5FF81DC8B7C</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>[[PREFIX]]bloghead</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2011-06-24T17:15:38Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string></string>
-			<key>lastUsed</key>
-			<date>2011-06-24T17:15:45Z</date>
-			<key>modificationDate</key>
-			<date>2011-06-24T17:15:38Z</date>
-			<key>plainText</key>
-			<string>Title: untitled
-Type: Blog Post (Markdown)
-Blog: BrettTerpstra
-Keywords: 
-Status: draft
-Pings: On
-Comments: On
-Category: 
-</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>1</integer>
-			<key>uuidString</key>
-			<string>DB24A9A3-4296-46FC-B7D4-3E026A6BD521</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
 			<string>[[PREFIX]]linkme</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -874,30 +798,6 @@ Category:
 			<integer>2</integer>
 			<key>uuidString</key>
 			<string>BCB1820B-7B40-45FE-BEBA-94A00A8174E5</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>[[PREFIX]]sera</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2011-08-11T14:53:11Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string></string>
-			<key>lastUsed</key>
-			<date>2011-08-11T14:54:04Z</date>
-			<key>modificationDate</key>
-			<date>2011-08-11T14:53:11Z</date>
-			<key>plainText</key>
-			<string>v;p2/g9YzPHo</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>1</integer>
-			<key>uuidString</key>
-			<string>ACB45B1B-D8E8-4DC0-905B-2FF977128B3B</string>
 		</dict>
 	</array>
 </dict>
