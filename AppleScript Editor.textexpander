@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>AppleScript Editor</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>tell-</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:54:22Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>tell block</string>
+			<key>lastUsed</key>
+			<date>2012-02-19T17:54:59Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:56:00Z</date>
+			<key>plainText</key>
+			<string>tell application "%|" to
+      
+end tell</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5D43C9C4-C4C3-4D8F-A05F-16ECC831A967</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,,tid</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2010-06-06T13:52:20Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>AS Text Item Delimiter</string>
+			<key>lastUsed</key>
+			<date>2012-02-19T17:53:06Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-02T04:06:29Z</date>
+			<key>plainText</key>
+			<string>set {astid, AppleScript's text item delimiters} to {AppleScript's text item delimiters, "%|"}
+
+set AppleScript's text item delimiters to astid</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>19</integer>
+			<key>uuidString</key>
+			<string>B2271B60-0C89-47A2-A8D8-29126044F46F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>s=</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:50:45Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>set variable</string>
+			<key>lastUsed</key>
+			<date>2012-02-19T17:52:00Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:53:41Z</date>
+			<key>plainText</key>
+			<string>set %fill:Variable% to %fill:Value%
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CF85C929-5E16-47CB-8A69-97E2FFCD0A79</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>p=</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:49:58Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>property</string>
+			<key>lastUsed</key>
+			<date>2012-02-19T17:56:56Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:56:43Z</date>
+			<key>plainText</key>
+			<string>property %fill:Variable%: %fill:Value%
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5CF91E1C-B427-47C5-B8A2-48F930794005</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>repeat </string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:49:03Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>repeat</string>
+			<key>lastUsed</key>
+			<date>2012-02-19T17:49:38Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:53:31Z</date>
+			<key>plainText</key>
+			<string>repeat %|
+
+end repeat</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1E989FDD-95E3-4A31-AEBA-025B5704034B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>if-</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:46:10Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>if block</string>
+			<key>lastUsed</key>
+			<date>2012-02-19T17:48:53Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:56:05Z</date>
+			<key>plainText</key>
+			<string>if %| then
+      
+end if</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1F6CA872-11FB-4D15-9A12-CE3D0E74491B</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>if </string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:45:36Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>if then</string>
+			<key>lastUsed</key>
+			<date>2012-02-19T17:55:18Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:45:36Z</date>
+			<key>plainText</key>
+			<string>if %| then</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B41D861C-30B5-4894-810C-6F78B14A8CB9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tell </string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-02-19T17:43:18Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>tell app</string>
+			<key>lastUsed</key>
+			<date>2012-02-19T17:55:04Z</date>
+			<key>modificationDate</key>
+			<date>2012-02-19T17:43:38Z</date>
+			<key>plainText</key>
+			<string>tell application "%|"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3B44C17D-5D0B-4270-9D31-47D3A71C038B</string>
+		</dict>
+	</array>
+</dict>
+</plist>
