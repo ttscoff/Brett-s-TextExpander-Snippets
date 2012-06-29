@@ -13,7 +13,161 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>[[PREFIX]]check</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-06-29T19:44:58Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2012-06-29T19:44:58Z</date>
+			<key>plainText</key>
+			<string>✓</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>3982A20C-C5FC-496E-80D6-5F2AE48E49A7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]trade</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-06-29T19:43:19Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2012-06-29T19:43:19Z</date>
+			<key>plainText</key>
+			<string>™</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>78691405-4053-48CB-9BE8-345196EC81D2</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]reg</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-06-29T19:42:05Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2012-06-29T19:42:11Z</date>
+			<key>plainText</key>
+			<string>®</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5AD78DCE-426D-44E1-BB9B-E64CEA528A6D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]pgdown</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-06-29T19:41:06Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2012-06-29T19:41:29Z</date>
+			<key>plainText</key>
+			<string>⇟</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B74425B8-002A-4229-A1E2-85B006A1CF37</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]pgup</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-06-29T19:40:45Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2012-06-29T19:41:25Z</date>
+			<key>plainText</key>
+			<string>⇞</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>161FDB20-C954-4E19-8099-D559666F0C47</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]space</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-04-22T18:24:18Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2012-04-22T18:24:44Z</date>
+			<key>plainText</key>
+			<string>␣</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>27EB80E4-50CD-425C-8E30-9BF9B1E5C4A1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>[[PREFIX]]enter</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-04-22T18:23:38Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2012-04-22T18:24:08Z</date>
+			<key>plainText</key>
+			<string>⌅</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>01AFF9CD-498A-4220-AA39-200F7B132910</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]return</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -22,16 +176,18 @@
 			<integer>0</integer>
 			<key>label</key>
 			<string></string>
+			<key>lastUsed</key>
+			<date>2012-05-09T23:19:35Z</date>
 			<key>modificationDate</key>
-			<date>2011-03-22T18:16:30Z</date>
+			<date>2012-04-22T18:21:49Z</date>
 			<key>plainText</key>
 			<string>↩</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>8</integer>
 			<key>uuidString</key>
-			<string>B750D90E-ED1B-42DA-AC7E-45DF6AC5E8AB</string>
+			<string>E8C57879-5652-4756-A7CD-4E231FD73BA7</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -44,6 +200,8 @@
 			<integer>0</integer>
 			<key>label</key>
 			<string></string>
+			<key>lastUsed</key>
+			<date>2011-09-03T12:25:37Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-22T18:16:05Z</date>
 			<key>plainText</key>
@@ -51,9 +209,9 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
-			<string>EBA2FEBE-6031-41E3-9FA9-B58C691624A2</string>
+			<string>E63C2901-2953-4091-92B3-5278D1B6C33A</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -75,7 +233,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>63E75D42-A837-44E1-ABAA-B2B44281E9AB</string>
+			<string>200882F6-2C53-4C6C-B607-A6FC06D43C6A</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -88,6 +246,8 @@
 			<integer>0</integer>
 			<key>label</key>
 			<string></string>
+			<key>lastUsed</key>
+			<date>2012-05-09T22:36:40Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-22T18:15:33Z</date>
 			<key>plainText</key>
@@ -95,9 +255,9 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>uuidString</key>
-			<string>2EC6A445-EA25-4934-BF3A-1CC01F970CA4</string>
+			<string>0D780429-E468-429D-9705-BA843772747F</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -110,6 +270,8 @@
 			<integer>0</integer>
 			<key>label</key>
 			<string></string>
+			<key>lastUsed</key>
+			<date>2012-02-29T23:31:20Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-22T18:15:22Z</date>
 			<key>plainText</key>
@@ -117,9 +279,9 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
-			<string>B561B105-A707-4C3B-A374-95A07F4529E3</string>
+			<string>BE50AA60-5C94-49B6-A919-0ED8BABA110F</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -133,7 +295,7 @@
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-03-22T18:05:13Z</date>
+			<date>2012-02-28T15:33:26Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-22T18:04:51Z</date>
 			<key>plainText</key>
@@ -141,9 +303,9 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>4</integer>
 			<key>uuidString</key>
-			<string>06A39A33-77DA-4F6D-88BB-EF049D617E7C</string>
+			<string>B0B55F02-50CE-40DC-9B78-76D0CC9C66B3</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -167,7 +329,7 @@
 			<key>useCount</key>
 			<integer>11</integer>
 			<key>uuidString</key>
-			<string>3D212B60-8326-46CD-A818-70DCE55FA796</string>
+			<string>9023C7E7-C8BC-4ECA-A12F-8EC0F43823D2</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -268,6 +430,8 @@
 			<integer>0</integer>
 			<key>label</key>
 			<string></string>
+			<key>lastUsed</key>
+			<date>2012-05-09T15:27:22Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-20T16:45:32Z</date>
 			<key>plainText</key>
@@ -275,7 +439,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>EBF3B78C-4977-4DDB-895F-F66F29825F9B</string>
 		</dict>
@@ -359,7 +523,7 @@
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-03-20T16:44:51Z</date>
+			<date>2011-11-09T17:44:56Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-20T16:42:47Z</date>
 			<key>plainText</key>
@@ -367,7 +531,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>3</integer>
 			<key>uuidString</key>
 			<string>BC871A16-2175-4A11-A97E-8C2ADE738772</string>
 		</dict>
@@ -383,7 +547,7 @@
 			<key>label</key>
 			<string>Control-Command-W</string>
 			<key>lastUsed</key>
-			<date>2011-03-01T02:00:40Z</date>
+			<date>2011-11-15T06:34:10Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-27T14:56:30Z</date>
 			<key>plainText</key>
@@ -391,7 +555,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>17</integer>
+			<integer>24</integer>
 			<key>uuidString</key>
 			<string>9B0614FD-5526-45B1-8078-07CEEDF83AC3</string>
 		</dict>
@@ -407,7 +571,7 @@
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-02-27T17:27:29Z</date>
+			<date>2012-06-27T21:06:18Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-27T14:56:10Z</date>
 			<key>plainText</key>
@@ -415,7 +579,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>36</integer>
+			<integer>186</integer>
 			<key>uuidString</key>
 			<string>61214865-6806-4A01-BD70-102DAC31D640</string>
 		</dict>
@@ -431,7 +595,7 @@
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2010-06-22T05:19:42Z</date>
+			<date>2012-06-28T22:22:02Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-27T14:56:13Z</date>
 			<key>plainText</key>
@@ -439,7 +603,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>7</integer>
+			<integer>12</integer>
 			<key>uuidString</key>
 			<string>7B730635-C048-4AE5-B9FB-7B04D1F42B4A</string>
 		</dict>
@@ -455,7 +619,7 @@
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-02-17T21:54:03Z</date>
+			<date>2012-06-28T22:21:35Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-27T14:56:15Z</date>
 			<key>plainText</key>
@@ -463,7 +627,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>4</integer>
+			<integer>11</integer>
 			<key>uuidString</key>
 			<string>CCCF187D-7288-408A-839A-A7DD0A269C61</string>
 		</dict>
@@ -479,7 +643,7 @@
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-02-18T14:24:29Z</date>
+			<date>2012-06-05T08:37:27Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-20T16:48:29Z</date>
 			<key>plainText</key>
@@ -487,7 +651,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>10</integer>
+			<integer>36</integer>
 			<key>uuidString</key>
 			<string>1C7DB9A4-7663-49D1-A061-CA98D57901C8</string>
 		</dict>
@@ -503,7 +667,7 @@
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-02-17T21:54:00Z</date>
+			<date>2012-06-28T22:21:45Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-27T14:56:21Z</date>
 			<key>plainText</key>
@@ -511,7 +675,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>14</integer>
+			<integer>20</integer>
 			<key>uuidString</key>
 			<string>20007266-89A3-409D-9B18-435470A2209A</string>
 		</dict>
@@ -527,7 +691,7 @@
 			<key>label</key>
 			<string>⇧</string>
 			<key>lastUsed</key>
-			<date>2011-02-18T22:22:08Z</date>
+			<date>2012-06-28T21:23:08Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-27T14:56:23Z</date>
 			<key>plainText</key>
@@ -535,7 +699,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>16</integer>
+			<integer>63</integer>
 			<key>uuidString</key>
 			<string>29D22D4E-39BA-4D53-8353-7BC8929A66D2</string>
 		</dict>
@@ -551,7 +715,7 @@
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2010-10-11T06:01:05Z</date>
+			<date>2012-06-28T22:21:55Z</date>
 			<key>modificationDate</key>
 			<date>2010-10-27T14:56:26Z</date>
 			<key>plainText</key>
@@ -559,9 +723,33 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>4</integer>
+			<integer>9</integer>
 			<key>uuidString</key>
 			<string>AB74B412-05D5-49DC-8FAA-5345E6CA7C91</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]gear</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-06-05T08:13:04Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2012-06-05T08:26:13Z</date>
+			<key>modificationDate</key>
+			<date>2012-06-05T08:13:04Z</date>
+			<key>plainText</key>
+			<string>⚙</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>098A0D2F-B760-4C61-9BC0-B98F38FE02C9</string>
 		</dict>
 	</array>
 </dict>

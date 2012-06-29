@@ -13,6 +13,75 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>,,cul</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-07T11:21:52Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Clipboard -&gt; UL</string>
+			<key>lastUsed</key>
+			<date>2012-06-29T18:43:28Z</date>
+			<key>modificationDate</key>
+			<date>2011-12-19T14:04:54Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+
+# ruby script to make an unordered list from indented data. 
+
+data = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+result = "&lt;ul&gt;\n"
+last_marker = []
+last_marker[0] = ""
+
+last_leading_space = ""
+g_tab_width = 4
+g_list_level = 0
+last_list_level = 0
+
+marker = item = leading_space = ''
+
+data.split("\n").each {|line|
+  next if line =~ /^[\s\t]*$/
+  parts = line.match(/^([\t ]*)(\d+\. |[\*\+\-] )?\s*(.*)/)
+  leading_space = parts[1]
+  marker = parts[2]
+  item = parts[3]
+  leading_space.gsub!(/\t/,'    ')
+  
+  if leading_space.length &gt; last_leading_space.length + 3
+    last_list_level = g_list_level
+    g_list_level += 1
+    last_leading_space = leading_space
+    last_list_level = g_list_level
+    result += "&lt;ul&gt;\n"
+  elsif leading_space.length + 3 &lt; last_leading_space.length
+    g_list_level = leading_space.length / 4
+    last_leading_space = leading_space
+    g_list_level-last_list_level.times do
+      result += "&lt;/ul&gt;\n"
+    end
+    last_list_level = g_list_level
+  end
+  indent = ""
+
+  result += "&lt;li&gt;#{item}&lt;/li&gt;\n"
+} 
+
+puts result + "&lt;/ul&gt;"
+</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>5</integer>
+			<key>uuidString</key>
+			<string>456BA7B0-0074-4E1A-92F4-4A5C5D675215</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>,,mad</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -23,38 +92,25 @@
 			<key>label</key>
 			<string>Make a date</string>
 			<key>lastUsed</key>
-			<date>2011-10-15T10:27:42Z</date>
+			<date>2012-06-29T18:41:54Z</date>
 			<key>modificationDate</key>
-			<date>2011-10-15T10:27:23Z</date>
+			<date>2012-06-29T18:39:33Z</date>
 			<key>plainText</key>
 			<string>#!/usr/bin/env php
 &lt;?php
+$input = "%fill:Date string%";
+// mon, tue, next fri, tomorrow 3pm...
+// 1, 3, -2 (days), 30 minutes...
+// avoid "on" and "at", keep it simple.
+
+
+
+
+
 date_default_timezone_set("America/Chicago");
 $dateformat = "l, M jS, Y";
 $timeformat = " \a\\t g:ia";
 $debug = 2;
-
-$input=
-
-
-
-
-
-
-
-
-
-
-				"%fill:Date string%";
-				// mon, tue, next fri, tomorrow 3pm...
-				// 1, 3, -2 (days), 30 minutes...
-				// avoid "on" and "at", keep it simple.
-
-
-
-
-
-
 
 if ( preg_match( "/^([+-])?(\d+)$/", trim($input), $matches ) ) 
 {
@@ -80,34 +136,9 @@ else
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>8</integer>
 			<key>uuidString</key>
-			<string>3D01857D-D034-4694-B889-2A37B627B635</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>,,tid</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2010-06-06T13:52:20Z</date>
-			<key>flags</key>
-			<integer>0</integer>
-			<key>label</key>
-			<string>AS Text Item Delimiter</string>
-			<key>lastUsed</key>
-			<date>2011-10-04T20:45:42Z</date>
-			<key>modificationDate</key>
-			<date>2011-09-02T04:06:29Z</date>
-			<key>plainText</key>
-			<string>set {astid, AppleScript's text item delimiters} to {AppleScript's text item delimiters, "%|"}
-set AppleScript's text item delimiters to astid</string>
-			<key>snippetType</key>
-			<integer>0</integer>
-			<key>useCount</key>
-			<integer>16</integer>
-			<key>uuidString</key>
-			<string>B673B52A-5F38-4862-8CDC-B856BBC3E1EE</string>
+			<string>12BBC3C9-B3F5-47D4-AE42-49D7CA96F80D</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -121,9 +152,9 @@ else
 			<key>label</key>
 			<string>Average numbers in clipboard</string>
 			<key>lastUsed</key>
-			<date>2011-09-02T23:29:10Z</date>
+			<date>2012-06-29T18:48:04Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-02T03:17:10Z</date>
+			<date>2011-12-07T14:00:27Z</date>
 			<key>plainText</key>
 			<string>#!/usr/bin/env ruby
 
@@ -146,7 +177,7 @@ print do_average %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.st
 			<key>useCount</key>
 			<integer>2</integer>
 			<key>uuidString</key>
-			<string>B9DF76C5-53EE-4146-9FF0-4B8B53F3B50A</string>
+			<string>3B6B979D-7177-44C3-8B37-217301360214</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -160,11 +191,11 @@ print do_average %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.st
 			<key>label</key>
 			<string>Hyphenate clipboard</string>
 			<key>lastUsed</key>
-			<date>2011-09-02T04:48:17Z</date>
+			<date>2012-06-29T19:31:58Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-02T04:47:50Z</date>
+			<date>2012-06-29T19:32:08Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby
+			<string>#!/usr/bin/ruby
 
 clip = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}
 print clip.gsub(/\b\s\b/,'-')</string>
@@ -173,7 +204,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>useCount</key>
 			<integer>19</integer>
 			<key>uuidString</key>
-			<string>7DF920C1-6B06-4B7F-BA80-19C67C5637B0</string>
+			<string>36ED9B49-995A-4B1B-A892-1A89A7C943DE</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -187,9 +218,9 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>label</key>
 			<string>Dummy Image</string>
 			<key>lastUsed</key>
-			<date>2011-03-01T01:14:23Z</date>
+			<date>2012-06-29T18:45:41Z</date>
 			<key>modificationDate</key>
-			<date>2010-10-13T15:08:58Z</date>
+			<date>2012-06-29T18:46:16Z</date>
 			<key>plainText</key>
 			<string>&lt;img src="http://placehold.it/%fill:width%x%fill:height%/333333/dddddd&amp;text=%fill:title%" alt="%fill:title%" width="%fill:width%" height="%fill:height%" /&gt;</string>
 			<key>snippetType</key>
@@ -197,7 +228,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>useCount</key>
 			<integer>9</integer>
 			<key>uuidString</key>
-			<string>91FEE5DC-C0A0-4F79-A5F7-71963F28BDBD</string>
+			<string>C02FAB0D-1B21-4A9C-88C5-2D1A719083EE</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -211,7 +242,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>label</key>
 			<string>Kitty Placeholder - Grey</string>
 			<key>lastUsed</key>
-			<date>2011-04-23T09:00:09Z</date>
+			<date>2012-06-29T19:32:28Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-01T01:12:44Z</date>
 			<key>plainText</key>
@@ -219,9 +250,9 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>11</integer>
+			<integer>14</integer>
 			<key>uuidString</key>
-			<string>B3728814-C136-406B-995B-E97AD43C2423</string>
+			<string>16DBFD82-0CF0-47E2-9519-92F9D217415A</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -235,7 +266,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>label</key>
 			<string>Kitty Placeholder - Color</string>
 			<key>lastUsed</key>
-			<date>2011-03-01T01:30:09Z</date>
+			<date>2012-06-29T19:32:43Z</date>
 			<key>modificationDate</key>
 			<date>2011-03-01T01:12:49Z</date>
 			<key>plainText</key>
@@ -245,11 +276,11 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>useCount</key>
 			<integer>13</integer>
 			<key>uuidString</key>
-			<string>DF8219A5-343F-4655-95F8-C566C59F831F</string>
+			<string>26F5DF0D-04BC-4B9C-9652-40CD97295FB0</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>,,email</string>
+			<string>,,encemail</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -259,9 +290,9 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>label</key>
 			<string>Encode email address</string>
 			<key>lastUsed</key>
-			<date>2010-05-08T01:00:42Z</date>
+			<date>2012-06-29T18:48:29Z</date>
 			<key>modificationDate</key>
-			<date>2010-10-13T15:08:46Z</date>
+			<date>2012-04-21T13:33:33Z</date>
 			<key>plainText</key>
 			<string>#!/usr/bin/env ruby -wKU
 
@@ -270,9 +301,9 @@ print "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}" 
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>4</integer>
 			<key>uuidString</key>
-			<string>2A222F67-844F-42E4-915D-1B2B337EE091</string>
+			<string>0A6B1C52-ADB2-47B7-8977-0622EF7F0F7F</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -286,7 +317,7 @@ print "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}" 
 			<key>label</key>
 			<string>Clipboard HTML Link</string>
 			<key>lastUsed</key>
-			<date>2010-06-07T12:39:55Z</date>
+			<date>2012-06-29T19:30:18Z</date>
 			<key>modificationDate</key>
 			<date>2010-05-05T20:04:04Z</date>
 			<key>plainText</key>
@@ -316,9 +347,9 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>26</integer>
+			<integer>29</integer>
 			<key>uuidString</key>
-			<string>6E8F0D03-3DFD-4079-8EC5-06D7FD3CB484</string>
+			<string>EC0598AA-1E97-4512-90EE-240D622EDDDE</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -332,7 +363,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>label</key>
 			<string>jQuery Wrapper</string>
 			<key>lastUsed</key>
-			<date>2011-09-13T15:12:48Z</date>
+			<date>2012-06-29T18:49:27Z</date>
 			<key>modificationDate</key>
 			<date>2010-11-10T09:03:44Z</date>
 			<key>plainText</key>
@@ -340,9 +371,9 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>32</integer>
+			<integer>62</integer>
 			<key>uuidString</key>
-			<string>BA3B1F24-FE34-4377-8024-2D00145F5533</string>
+			<string>020CD7DF-48E4-45CE-AEDB-82E94D46E351</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -356,19 +387,20 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>label</key>
 			<string>Paste Markdown References</string>
 			<key>lastUsed</key>
-			<date>2010-10-13T15:35:06Z</date>
+			<date>2012-06-29T18:55:08Z</date>
 			<key>modificationDate</key>
-			<date>2011-04-23T09:58:24Z</date>
+			<date>2012-06-29T18:53:37Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby
-=begin
-Parses the clipboard for urls
-if it finds 1 or more, paste them as a list of markdown references
-if the links in the clipboard are already in markdown reference format, it preserves their names and sorts the references
-=end
+			<string>#!/usr/bin/ruby
 
-clipboard = "%x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip"
+# Parses the clipboard for urls
+# if it finds 1 or more, paste them as a list of markdown references
+# if the links in the clipboard are already in markdown reference format, 
+# it preserves their names and sorts the references
+
+clipboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
 links = clipboard.scan /(?:\[([^\]]+)\]\: )?(https?:\/\/[^ \n\r"]+)/m
+
 norepeat = []
 output = []
 exit if links.nil?
@@ -406,7 +438,7 @@ output.sort {|a,b| a['title'] &lt;=&gt; b['title']}.each { |x| puts "[#{x['title
 			<key>useCount</key>
 			<integer>5</integer>
 			<key>uuidString</key>
-			<string>543CC81E-F03B-42DF-A6E1-7F5D17BF1D1C</string>
+			<string>506DD58A-5A35-4CE2-85DD-BBF7A6D0850E</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -420,7 +452,7 @@ output.sort {|a,b| a['title'] &lt;=&gt; b['title']}.each { |x| puts "[#{x['title
 			<key>label</key>
 			<string>Markdown Link</string>
 			<key>lastUsed</key>
-			<date>2011-02-17T16:17:00Z</date>
+			<date>2012-06-29T18:56:13Z</date>
 			<key>modificationDate</key>
 			<date>2011-02-17T16:17:37Z</date>
 			<key>plainText</key>
@@ -452,7 +484,7 @@ print %Q{[%fill:Link Text%](#{url})}</string>
 			<key>useCount</key>
 			<integer>24</integer>
 			<key>uuidString</key>
-			<string>E63A4AC2-4E3B-4DA3-9C2C-9A0348E1F2A9</string>
+			<string>7EC75DA6-5BE1-4A2C-B6B2-5EF1F4E382D1</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -466,17 +498,18 @@ print %Q{[%fill:Link Text%](#{url})}</string>
 			<key>label</key>
 			<string>Shorten clipboard (bit.ly)</string>
 			<key>lastUsed</key>
-			<date>2011-05-05T13:28:30Z</date>
+			<date>2012-06-29T19:29:05Z</date>
 			<key>modificationDate</key>
-			<date>2010-10-18T23:42:18Z</date>
+			<date>2012-06-29T19:28:05Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby -wKU
+			<string>#!/usr/bin/ruby
+# Bit.ly shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+# Create snippets for username (shortcut: #btlyu) and API key (shortcut: #btlya)
+# Find your API key at http://bit.ly/a/your_api_key
 
 require 'open-uri'
 require 'cgi'
-
-USER_NAME = 'ttscoff' # Your login name
-API_KEY = 'R_4a4c6a9421a9e73a4682268eca599be1' # http://bit.ly/a/your_api_key
 
 def entity_escape(text)
   text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
@@ -495,7 +528,8 @@ def make_link(text)
   end
 end
 
-
+USER_NAME = '%snippet:#btlyu%' # Your login name
+API_KEY = '%snippet:#btlya%' 
 url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
 
 res = open("http://api.bit.ly/v3/shorten?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;longUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
@@ -510,65 +544,7 @@ end</string>
 			<key>useCount</key>
 			<integer>25</integer>
 			<key>uuidString</key>
-			<string>E9B7CD10-52FB-469D-902E-ED17BF227E72</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>,,sug</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2010-04-29T18:35:28Z</date>
-			<key>flags</key>
-			<integer>2</integer>
-			<key>label</key>
-			<string>Shorten clipboard (go.)</string>
-			<key>lastUsed</key>
-			<date>2010-05-07T19:04:20Z</date>
-			<key>modificationDate</key>
-			<date>2010-05-05T20:02:34Z</date>
-			<key>plainText</key>
-			<string>#!/usr/bin/env ruby -wKU
-
-require 'net/http'
-require 'cgi'
-
-def entity_escape(text)
-  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
-end
-
-def make_link(text)
-  case text
-  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
-    entity_escape(text)
-  when %r{\A(www\..*|.*\.\w{2,4})\z}:
-    "http://#{entity_escape text}"
-  when %r{\A.*?\.\w{2,4}\/?.*\z}:
-    "http://#{entity_escape text}"
-  else
-    nil
-  end
-end
-
-
-input = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
-exit if input.nil?
-http = Net::HTTP.new('to.')
-path = '/'
-data = "url=#{CGI.escape(input.strip)}"
-headers = {'Content-Type' =&gt; 'application/x-www-form-urlencoded'}
-resp, data = http.post(path, data, headers)
-if resp.code.to_i == 200
-  print data.split(/value="/)[1].split(/"/)[0]
-else
-  print input
-end</string>
-			<key>snippetType</key>
-			<integer>3</integer>
-			<key>useCount</key>
-			<integer>7</integer>
-			<key>uuidString</key>
-			<string>DB17EAC0-7C04-4C31-A540-7BA19291AE12</string>
+			<string>AED7DF63-8CFE-48AD-BC1C-D67B2CD90856</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -582,11 +558,13 @@ end</string>
 			<key>label</key>
 			<string>Shorten clipboard (is.gd)</string>
 			<key>lastUsed</key>
-			<date>2010-12-14T21:28:39Z</date>
+			<date>2012-06-29T19:00:44Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-05T20:02:39Z</date>
+			<date>2012-06-29T19:29:56Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby -wKU
+			<string>#!/usr/bin/ruby
+# is.gd shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
 
 require 'open-uri'
 require 'cgi'
@@ -609,14 +587,13 @@ def make_link(text)
 end
 
 url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
-
 print open("http://is.gd/api.php?longurl=#{CGI.escape(url)}").read unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
 			<integer>20</integer>
 			<key>uuidString</key>
-			<string>724060A0-1041-4CDB-87BD-70D0D8C9BE93</string>
+			<string>54E85CC6-EEED-4EF9-B960-494C920B7D97</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -630,11 +607,13 @@ print open("http://is.gd/api.php?longurl=#{CGI.escape(url)}").read unless url.ni
 			<key>label</key>
 			<string>Shorten clipboard (tinyurl)</string>
 			<key>lastUsed</key>
-			<date>2011-04-20T11:13:11Z</date>
+			<date>2012-06-29T18:58:26Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-05T20:02:44Z</date>
+			<date>2012-06-29T19:29:52Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby -wKU
+			<string>#!/usr/bin/ruby
+# tinyurl shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
 
 require 'open-uri'
 require 'cgi'
@@ -662,9 +641,9 @@ print open("http://tinyurl.com/api-create.php?url=#{CGI.escape(url)}").read unle
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>38</integer>
+			<integer>39</integer>
 			<key>uuidString</key>
-			<string>E20D335C-5408-4340-86FB-BA964B6078F8</string>
+			<string>681CFED6-6FF4-4D1A-8EF7-393221011981</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -678,7 +657,7 @@ print open("http://tinyurl.com/api-create.php?url=#{CGI.escape(url)}").read unle
 			<key>label</key>
 			<string>Make URL</string>
 			<key>lastUsed</key>
-			<date>2011-04-23T09:06:48Z</date>
+			<date>2012-06-29T19:30:11Z</date>
 			<key>modificationDate</key>
 			<date>2011-04-23T09:06:57Z</date>
 			<key>plainText</key>
@@ -710,7 +689,7 @@ print url unless url.nil?</string>
 			<key>useCount</key>
 			<integer>29</integer>
 			<key>uuidString</key>
-			<string>A1B1C5EA-9ECD-48E0-A19F-60281D7CA491</string>
+			<string>A8B2609D-0D88-467A-8A2C-40F3022BDDDA</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -724,7 +703,7 @@ print url unless url.nil?</string>
 			<key>label</key>
 			<string>Hashbang, Bash</string>
 			<key>lastUsed</key>
-			<date>2011-09-02T04:48:55Z</date>
+			<date>2012-06-29T19:30:24Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-02T04:49:35Z</date>
 			<key>plainText</key>
@@ -732,9 +711,9 @@ print url unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>uuidString</key>
-			<string>EC854A0B-6026-468C-BECC-4D1F7CCFD0DD</string>
+			<string>9005DCF8-266A-42DF-84DA-0ED9AE493429</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -756,7 +735,7 @@ print url unless url.nil?</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>D6DD8684-7043-49F1-B591-974DF71134B1</string>
+			<string>E37D8536-92ED-4C53-9B1D-E72FC77AE153</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -770,17 +749,17 @@ print url unless url.nil?</string>
 			<key>label</key>
 			<string>Hashbang, Ruby</string>
 			<key>lastUsed</key>
-			<date>2011-09-11T00:57:54Z</date>
+			<date>2012-06-29T19:30:27Z</date>
 			<key>modificationDate</key>
-			<date>2011-04-23T08:51:22Z</date>
+			<date>2012-06-29T19:30:34Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby</string>
+			<string>#!/usr/bin/ruby</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>9</integer>
 			<key>uuidString</key>
-			<string>5130B2BB-C47F-4BCC-9000-376F86A1123D</string>
+			<string>BA8791C1-E3DA-48F3-9455-26C6567EB636</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -804,7 +783,7 @@ print url unless url.nil?</string>
 			<key>useCount</key>
 			<integer>2</integer>
 			<key>uuidString</key>
-			<string>BCB1820B-7B40-45FE-BEBA-94A00A8174E5</string>
+			<string>30170A44-B603-4700-A146-0B3772EA165C</string>
 		</dict>
 	</array>
 </dict>

@@ -13,6 +13,50 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>[[PREFIX]]"st2</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-06-29T19:36:40Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Sublime Packages Quoted</string>
+			<key>modificationDate</key>
+			<date>2012-06-29T19:36:40Z</date>
+			<key>plainText</key>
+			<string>"/Users/ttscoff/Library/Application Support/Sublime Text 2/Packages/User"</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B5109E24-8253-4161-B5EF-99B109502E49</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]st2</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-06-29T19:36:22Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Sublime Packages</string>
+			<key>modificationDate</key>
+			<date>2012-06-29T19:36:34Z</date>
+			<key>plainText</key>
+			<string>/Users/ttscoff/Library/Application Support/Sublime Text 2/Packages/User</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D49ED5D0-0915-46EA-8E96-1406D94B8692</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>[[PREFIX]]"apps</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -93,7 +137,7 @@
 			<key>label</key>
 			<string>Sites</string>
 			<key>lastUsed</key>
-			<date>2011-04-25T00:30:27Z</date>
+			<date>2011-10-01T20:58:04Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-02T04:10:06Z</date>
 			<key>plainText</key>
@@ -101,7 +145,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>3</integer>
 			<key>uuidString</key>
 			<string>0B60516B-0DA1-4422-BE84-0D7AB12EB89A</string>
 		</dict>
@@ -117,7 +161,7 @@
 			<key>label</key>
 			<string>App Support</string>
 			<key>lastUsed</key>
-			<date>2011-07-04T19:39:55Z</date>
+			<date>2012-06-27T23:48:59Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-02T04:10:11Z</date>
 			<key>plainText</key>
@@ -125,7 +169,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>64</integer>
+			<integer>117</integer>
 			<key>uuidString</key>
 			<string>7BF2069D-E7F5-4A5C-AC0E-4BA91BCAF44C</string>
 		</dict>
@@ -141,7 +185,7 @@
 			<key>label</key>
 			<string>User Library</string>
 			<key>lastUsed</key>
-			<date>2011-05-20T11:27:22Z</date>
+			<date>2012-04-07T22:20:03Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-02T04:10:33Z</date>
 			<key>plainText</key>
@@ -149,7 +193,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>8</integer>
+			<integer>15</integer>
 			<key>uuidString</key>
 			<string>91E81974-DB96-4FE0-97F3-C95B33344819</string>
 		</dict>
@@ -176,6 +220,30 @@
 			<integer>13</integer>
 			<key>uuidString</key>
 			<string>F6DE8F40-78C1-44EA-A213-C4C4CE17188A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]odds</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-12-06T23:44:38Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-12-08T16:46:15Z</date>
+			<key>modificationDate</key>
+			<date>2011-12-06T23:44:38Z</date>
+			<key>plainText</key>
+			<string>~/Dropbox/Code/OddsAndEnds/</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>2E850C72-71C7-4ECA-B7C5-A4E15006BAC5</string>
 		</dict>
 	</array>
 </dict>

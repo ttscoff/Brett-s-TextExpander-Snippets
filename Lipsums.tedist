@@ -5,7 +5,7 @@
 	<key>groupInfo</key>
 	<dict>
 		<key>expandAfterMode</key>
-		<integer>2</integer>
+		<integer>0</integer>
 		<key>groupName</key>
 		<string>Lipsums</string>
 	</dict>
@@ -13,7 +13,7 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
-			<string>[[PREFIX]]nav</string>
+			<string>,nav</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -22,26 +22,29 @@
 			<integer>0</integer>
 			<key>label</key>
 			<string>Placeholder Nav</string>
+			<key>lastUsed</key>
+			<date>2012-06-29T19:34:34Z</date>
 			<key>modificationDate</key>
-			<date>2010-04-30T03:48:03Z</date>
+			<date>2012-06-29T19:35:37Z</date>
 			<key>plainText</key>
-			<string>&lt;ul id="nav"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Clients&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</string>
+			<string>&lt;nav&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Clients&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>uuidString</key>
-			<string>24124254-E042-4C04-A185-DF0212FF54DD</string>
+			<string>6D022BD8-A5C0-4909-8D69-BC39C634E7D6</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>[[PREFIX]]lipsum1</string>
+			<string>lorem1</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -51,21 +54,21 @@
 			<key>label</key>
 			<string>Lipsum, 1 Paragraph</string>
 			<key>lastUsed</key>
-			<date>2010-05-07T23:58:48Z</date>
+			<date>2012-06-24T02:13:52Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-08T01:01:40Z</date>
+			<date>2010-10-13T15:29:59Z</date>
 			<key>plainText</key>
 			<string>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>30</integer>
+			<integer>405</integer>
 			<key>uuidString</key>
-			<string>9223B09D-E707-4C38-9AEB-B9FFD2E2B940</string>
+			<string>67C75B09-185B-4091-9BC9-9DBD267D554A</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>[[PREFIX]]lipsum2</string>
+			<string>lorem2</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -75,9 +78,9 @@
 			<key>label</key>
 			<string>Lipsum, 2 Paragraphs</string>
 			<key>lastUsed</key>
-			<date>2010-05-07T23:58:52Z</date>
+			<date>2012-06-16T12:54:20Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-08T01:01:48Z</date>
+			<date>2010-10-13T15:30:09Z</date>
 			<key>plainText</key>
 			<string>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -85,13 +88,13 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>2</integer>
+			<integer>83</integer>
 			<key>uuidString</key>
-			<string>D1E194DC-220D-46B6-9152-7BF27B362F36</string>
+			<string>D2322835-CF33-4A91-A6D0-92A66DE95373</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>[[PREFIX]]lipsum3</string>
+			<string>lorem3</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -101,9 +104,9 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 			<key>label</key>
 			<string>Lipsum, 3 Paragraphs</string>
 			<key>lastUsed</key>
-			<date>2010-04-26T12:39:42Z</date>
+			<date>2012-06-16T12:51:03Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-08T01:01:54Z</date>
+			<date>2010-10-13T15:30:13Z</date>
 			<key>plainText</key>
 			<string>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -113,13 +116,13 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>8</integer>
+			<integer>247</integer>
 			<key>uuidString</key>
-			<string>C37A90AB-84FD-45AD-920C-E08CB21AF24F</string>
+			<string>6A25B43D-82FB-4632-BD4D-CF0ECA7F1B68</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>[[PREFIX]]lipsumhtml</string>
+			<string>loremhtml</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -129,16 +132,16 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 			<key>label</key>
 			<string>Lipsum, all HTML</string>
 			<key>lastUsed</key>
-			<date>2010-04-24T21:19:18Z</date>
+			<date>2012-06-29T19:34:11Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-08T01:02:03Z</date>
+			<date>2010-10-13T15:30:16Z</date>
 			<key>plainText</key>
 			<string>&lt;h1&gt;HTML Ipsum Presents&lt;/h1&gt; &lt;!-- via http://html-ipsum.com/ --&gt;
-	       
+
 &lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi tristique&lt;/strong&gt; senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em&gt;Aenean ultricies mi vitae est.&lt;/em&gt; Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, &lt;code&gt;commodo vitae&lt;/code&gt;, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. &lt;a href="#"&gt;Donec non enim&lt;/a&gt; in turpis pulvinar facilisis. Ut felis.&lt;/p&gt;
 
 &lt;h2&gt;Header Level 2&lt;/h2&gt;
-	       
+
 &lt;ol&gt;
    &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
    &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
@@ -154,22 +157,22 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code&gt;
-#header h1 a { 
-	display: block; 
-	width: 300px; 
-	height: 80px; 
+#header h1 a {
+	display: block;
+	width: 300px;
+	height: 80px;
 }
 &lt;/code&gt;&lt;/pre&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>2</integer>
+			<integer>14</integer>
 			<key>uuidString</key>
-			<string>8E34BAC2-366A-4793-8AA4-D9581194F1DC</string>
+			<string>AFAA1045-3A87-4487-B7A0-3F0D8739B6FC</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>[[PREFIX]]lipsumol</string>
+			<string>loremol</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -179,9 +182,9 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 			<key>label</key>
 			<string>Lipsum, Ordered list</string>
 			<key>lastUsed</key>
-			<date>2010-04-26T12:39:34Z</date>
+			<date>2012-06-29T19:34:03Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-08T01:02:10Z</date>
+			<date>2010-10-13T15:30:20Z</date>
 			<key>plainText</key>
 			<string>&lt;ol&gt;
    &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
@@ -192,13 +195,13 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>3</integer>
 			<key>uuidString</key>
-			<string>49AC2EAF-FBC9-4ED0-A94B-5DEBA1D4A496</string>
+			<string>A8E9CE97-CD2B-4B61-BED6-D85F6947D01C</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>[[PREFIX]]lipsumul</string>
+			<string>loremul</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -207,8 +210,10 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 			<integer>0</integer>
 			<key>label</key>
 			<string>Lipsum, Unordered list</string>
+			<key>lastUsed</key>
+			<date>2012-06-29T19:34:05Z</date>
 			<key>modificationDate</key>
-			<date>2010-05-08T01:02:18Z</date>
+			<date>2010-10-13T15:30:24Z</date>
 			<key>plainText</key>
 			<string>&lt;ul&gt;
    &lt;li&gt;Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.&lt;/li&gt;
@@ -220,9 +225,9 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>uuidString</key>
-			<string>583B31D7-1E16-4507-A532-BAF92F790092</string>
+			<string>04DB1EA2-F1C1-491A-8FAC-7EF61AFCCE75</string>
 		</dict>
 	</array>
 </dict>
