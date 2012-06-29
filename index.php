@@ -2,7 +2,7 @@
   $group = (isset($_REQUEST['group'])) ? $_REQUEST['group'] : '';
   $prefix = (isset($_REQUEST['prefix'])) ? $_REQUEST['prefix'] : ',,';
 ?>
-<!DOCTYPE html>  
+<!DOCTYPE html>
 
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
@@ -34,7 +34,7 @@
       <p id="backbuttons"><a href="http://brettterpstra.com/project/textexpander-tools/">TextExpander project</a> | <a href="http://brettterpstra.com">Brett Terpstra</a></p>
       <h1>Create a custom TextExpander URL</h1>
     </header>
-    
+
     <div id="main">
       <form id="prefixform" action="te-download.php" method="get">
         <div>
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div id="preview">
-      
+
     </div>
     <footer>
       <p>
@@ -80,8 +80,8 @@
   <!-- <script src="js/plugins.js"></script> -->
   <script src="js/script.js"></script>
   <!-- end concatenated and minified scripts-->
-  
-  
+
+
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script> DD_belatedPNG.fix('img, .png_bg'); </script>
@@ -99,12 +99,6 @@
     g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g, s);
    })(document, 'script');
-  </script>
-  <script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
-  <script type="text/javascript">
-  try {
-  reinvigorate.track("48372-lfapv5kwv9");
-  } catch(err) {}
   </script>
   <?php } ?>
 </body>
