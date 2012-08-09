@@ -83,20 +83,37 @@ end</string>
 			<key>label</key>
 			<string>CloudApp Direct Link</string>
 			<key>lastUsed</key>
-			<date>2012-08-07T05:58:17Z</date>
+			<date>2012-08-09T12:24:27Z</date>
 			<key>modificationDate</key>
-			<date>2012-08-07T06:35:51Z</date>
+			<date>2012-08-09T12:24:04Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby
-#
-# finds the direct download link for the CloudApp url in the clipboard
+			<string>#!/usr/bin/ruby
+require 'open-uri'
+require 'cgi'
 
-pboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
-
-if pboard.strip =~  /^http:\/\/clnhr.mn\/[^\s]+$/
-	page = %x{curl -LSs "#{pboard.strip}" }
-	print page.match(/&lt;a class="embed" href="(http:\/\/clnhr.mn\/(.*?))"&gt;Direct link&lt;\/a&gt;/)[1]
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
 end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+input = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+open(input,"Accept" =&gt; "application/json") {|f|
+	res = f.read.match(/"remote_url":"(.*?)"/)[1]
+	print res unless res.nil?
+}
 </string>
 			<key>snippetType</key>
 			<integer>3</integer>
@@ -843,7 +860,7 @@ print url unless url.nil?</string>
 			<key>label</key>
 			<string>Hashbang, Ruby</string>
 			<key>lastUsed</key>
-			<date>2012-08-09T11:59:53Z</date>
+			<date>2012-08-09T12:16:43Z</date>
 			<key>modificationDate</key>
 			<date>2012-06-29T19:30:34Z</date>
 			<key>plainText</key>

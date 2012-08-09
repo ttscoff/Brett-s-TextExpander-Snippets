@@ -54,7 +54,7 @@ def make_link(text)
 end
 
 USER_NAME = '%snippet:#btlyu%' # Your login name
-API_KEY = '%snippet:#btlya%'
+API_KEY = '%snippet:#btlya%' 
 url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
 
 res = open("http://api.bit.ly/v3/expand?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;shortUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
@@ -83,20 +83,37 @@ end</string>
 			<key>label</key>
 			<string>CloudApp Direct Link</string>
 			<key>lastUsed</key>
-			<date>2012-08-07T05:58:17Z</date>
+			<date>2012-08-09T12:24:27Z</date>
 			<key>modificationDate</key>
-			<date>2012-08-07T06:35:51Z</date>
+			<date>2012-08-09T12:24:04Z</date>
 			<key>plainText</key>
-			<string>#!/usr/bin/env ruby
-#
-# finds the direct download link for the CloudApp url in the clipboard
+			<string>#!/usr/bin/ruby
+require 'open-uri'
+require 'cgi'
 
-pboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
-
-if pboard.strip =~  /^http:\/\/clnhr.mn\/[^\s]+$/
-	page = %x{curl -LSs "#{pboard.strip}" }
-	print page.match(/&lt;a class="embed" href="(http:\/\/clnhr.mn\/(.*?))"&gt;Direct link&lt;\/a&gt;/)[1]
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
 end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+input = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+open(input,"Accept" =&gt; "application/json") {|f|
+	res = f.read.match(/"remote_url":"(.*?)"/)[1]
+	print res unless res.nil?
+}
 </string>
 			<key>snippetType</key>
 			<integer>3</integer>
@@ -123,7 +140,7 @@ end
 			<key>plainText</key>
 			<string>#!/usr/bin/ruby
 
-# ruby script to make an unordered list from indented data.
+# ruby script to make an unordered list from indented data. 
 
 data = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
 
@@ -145,7 +162,7 @@ data.split("\n").each {|line|
   marker = parts[2]
   item = parts[3]
   leading_space.gsub!(/\t/,'    ')
-
+  
   if leading_space.length &gt; last_leading_space.length + 3
     last_list_level = g_list_level
     g_list_level += 1
@@ -163,7 +180,7 @@ data.split("\n").each {|line|
   indent = ""
 
   result += "&lt;li&gt;#{item}&lt;/li&gt;\n"
-}
+} 
 
 puts result + "&lt;/ul&gt;"
 </string>
@@ -206,24 +223,24 @@ $dateformat = "l, M jS, Y";
 $timeformat = " \a\\t g:ia";
 $debug = 2;
 
-if ( preg_match( "/^([+-])?(\d+)$/", trim($input), $matches ) )
+if ( preg_match( "/^([+-])?(\d+)$/", trim($input), $matches ) ) 
 {
   $input = $matches[2] . " days";
   if ($matches[1] == "-") $input .= " ago";
-}
-else if ( preg_match("/([ap]m|noon|midnight|hours|minutes)/i",trim($input),$matches) )
+} 
+else if ( preg_match("/([ap]m|noon|midnight|hours|minutes)/i",trim($input),$matches) ) 
 {
   $dateformat .= $timeformat;
 }
 
-if (($timestamp = strtotime("$input")) === false)
+if (($timestamp = strtotime("$input")) === false) 
 {
-  if($debug &gt; 1)
+  if($debug &gt; 1) 
     `/usr/local/bin/growlnotify -a TextExpander -t "Natural language FAIL" -m "I can't understand you when you mumble"`;
-  if ($debug &gt; 0)
+  if ($debug &gt; 0) 
 	die('Derp');
-}
-else
+} 
+else 
 {
   echo date($dateformat,$timestamp);
 }</string>
@@ -257,7 +274,7 @@ def ts( number )
 end
 
 def do_average(text)
-  arr = text.scan(/\.?\d[\d,]+(?:\.\d+)?/).map{|line|
+  arr = text.scan(/\.?\d[\d,]+(?:\.\d+)?/).map{|line| 
     line.gsub(/[^\d\.]/,'').to_f
   }.sort
 
@@ -489,7 +506,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 
 # Parses the clipboard for urls
 # if it finds 1 or more, paste them as a list of markdown references
-# if the links in the clipboard are already in markdown reference format,
+# if the links in the clipboard are already in markdown reference format, 
 # it preserves their names and sorts the references
 
 clipboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
@@ -623,7 +640,7 @@ def make_link(text)
 end
 
 USER_NAME = '%snippet:#btlyu%' # Your login name
-API_KEY = '%snippet:#btlya%'
+API_KEY = '%snippet:#btlya%' 
 url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
 
 res = open("http://api.bit.ly/v3/shorten?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;longUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
@@ -843,7 +860,7 @@ print url unless url.nil?</string>
 			<key>label</key>
 			<string>Hashbang, Ruby</string>
 			<key>lastUsed</key>
-			<date>2012-08-09T11:59:53Z</date>
+			<date>2012-08-09T12:16:43Z</date>
 			<key>modificationDate</key>
 			<date>2012-06-29T19:30:34Z</date>
 			<key>plainText</key>
