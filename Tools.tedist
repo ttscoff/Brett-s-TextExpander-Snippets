@@ -13,6 +13,100 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>[[PREFIX]]eub</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-08-09T11:54:19Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Expand URL (bit.ly)</string>
+			<key>lastUsed</key>
+			<date>2012-08-09T11:58:29Z</date>
+			<key>modificationDate</key>
+			<date>2012-08-09T11:58:04Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+# Bit.ly shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+# Create snippets for username (shortcut: #btlyu) and API key (shortcut: #btlya)
+# Find your API key at http://bit.ly/a/your_api_key
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+USER_NAME = '%snippet:#btlyu%' # Your login name
+API_KEY = '%snippet:#btlya%'
+url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+res = open("http://api.bit.ly/v3/expand?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;shortUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
+
+begin
+  print res unless res.nil?
+rescue
+  exit
+end</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>FC28B252-2CBF-46A6-A504-7DB6605FEC94</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]cl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-08-07T05:54:59Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>CloudApp Direct Link</string>
+			<key>lastUsed</key>
+			<date>2012-08-07T05:58:17Z</date>
+			<key>modificationDate</key>
+			<date>2012-08-07T06:35:51Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/env ruby
+#
+# finds the direct download link for the CloudApp url in the clipboard
+
+pboard = %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
+
+if pboard.strip =~  /^http:\/\/clnhr.mn\/[^\s]+$/
+	page = %x{curl -LSs "#{pboard.strip}" }
+	print page.match(/&lt;a class="embed" href="(http:\/\/clnhr.mn\/(.*?))"&gt;Direct link&lt;\/a&gt;/)[1]
+end
+</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>77B8C43A-B65F-41CC-A3CD-07C6C97D89EB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>[[PREFIX]]cul</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -202,7 +296,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>19</integer>
+			<integer>22</integer>
 			<key>uuidString</key>
 			<string>36ED9B49-995A-4B1B-A892-1A89A7C943DE</string>
 		</dict>
@@ -250,7 +344,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>14</integer>
+			<integer>15</integer>
 			<key>uuidString</key>
 			<string>16DBFD82-0CF0-47E2-9519-92F9D217415A</string>
 		</dict>
@@ -274,7 +368,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>13</integer>
+			<integer>14</integer>
 			<key>uuidString</key>
 			<string>26F5DF0D-04BC-4B9C-9652-40CD97295FB0</string>
 		</dict>
@@ -290,7 +384,7 @@ print clip.gsub(/\b\s\b/,'-')</string>
 			<key>label</key>
 			<string>Encode email address</string>
 			<key>lastUsed</key>
-			<date>2012-06-29T18:48:29Z</date>
+			<date>2012-08-09T12:00:18Z</date>
 			<key>modificationDate</key>
 			<date>2012-04-21T13:33:33Z</date>
 			<key>plainText</key>
@@ -347,7 +441,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>29</integer>
+			<integer>30</integer>
 			<key>uuidString</key>
 			<string>EC0598AA-1E97-4512-90EE-240D622EDDDE</string>
 		</dict>
@@ -363,7 +457,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>label</key>
 			<string>jQuery Wrapper</string>
 			<key>lastUsed</key>
-			<date>2012-06-29T18:49:27Z</date>
+			<date>2012-07-03T02:54:00Z</date>
 			<key>modificationDate</key>
 			<date>2010-11-10T09:03:44Z</date>
 			<key>plainText</key>
@@ -371,7 +465,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>62</integer>
+			<integer>64</integer>
 			<key>uuidString</key>
 			<string>020CD7DF-48E4-45CE-AEDB-82E94D46E351</string>
 		</dict>
@@ -498,7 +592,7 @@ print %Q{[%fill:Link Text%](#{url})}</string>
 			<key>label</key>
 			<string>Shorten clipboard (bit.ly)</string>
 			<key>lastUsed</key>
-			<date>2012-06-29T19:29:05Z</date>
+			<date>2012-08-09T11:56:31Z</date>
 			<key>modificationDate</key>
 			<date>2012-06-29T19:28:05Z</date>
 			<key>plainText</key>
@@ -542,7 +636,7 @@ end</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>25</integer>
+			<integer>27</integer>
 			<key>uuidString</key>
 			<string>AED7DF63-8CFE-48AD-BC1C-D67B2CD90856</string>
 		</dict>
@@ -687,7 +781,7 @@ print url unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>29</integer>
+			<integer>31</integer>
 			<key>uuidString</key>
 			<string>A8B2609D-0D88-467A-8A2C-40F3022BDDDA</string>
 		</dict>
@@ -703,7 +797,7 @@ print url unless url.nil?</string>
 			<key>label</key>
 			<string>Hashbang, Bash</string>
 			<key>lastUsed</key>
-			<date>2012-06-29T19:30:24Z</date>
+			<date>2012-08-09T11:59:39Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-02T04:49:35Z</date>
 			<key>plainText</key>
@@ -711,7 +805,7 @@ print url unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>2</integer>
+			<integer>3</integer>
 			<key>uuidString</key>
 			<string>9005DCF8-266A-42DF-84DA-0ED9AE493429</string>
 		</dict>
@@ -749,7 +843,7 @@ print url unless url.nil?</string>
 			<key>label</key>
 			<string>Hashbang, Ruby</string>
 			<key>lastUsed</key>
-			<date>2012-06-29T19:30:27Z</date>
+			<date>2012-08-09T11:59:53Z</date>
 			<key>modificationDate</key>
 			<date>2012-06-29T19:30:34Z</date>
 			<key>plainText</key>
@@ -757,7 +851,7 @@ print url unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>9</integer>
+			<integer>10</integer>
 			<key>uuidString</key>
 			<string>BA8791C1-E3DA-48F3-9455-26C6567EB636</string>
 		</dict>
