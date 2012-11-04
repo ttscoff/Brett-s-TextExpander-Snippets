@@ -13,6 +13,184 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>[[PREFIX]]curl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-11-04T18:06:35Z</date>
+			<key>flags</key>
+			<integer>1</integer>
+			<key>label</key>
+			<string>Current Chrome url</string>
+			<key>lastUsed</key>
+			<date>2012-11-04T18:10:07Z</date>
+			<key>modificationDate</key>
+			<date>2012-11-04T18:06:35Z</date>
+			<key>plainText</key>
+			<string>tell application "Google Chrome" to return URL of active tab of window 1</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>89FC34E0-8CBC-40E6-A0E6-E44C41AFA65C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]surl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-11-04T18:06:35Z</date>
+			<key>flags</key>
+			<integer>1</integer>
+			<key>label</key>
+			<string>Current Safari url</string>
+			<key>lastUsed</key>
+			<date>2012-11-04T18:13:39Z</date>
+			<key>modificationDate</key>
+			<date>2012-11-04T18:13:04Z</date>
+			<key>plainText</key>
+			<string>tell application "Safari" to return URL of current tab of window 1</string>
+			<key>snippetType</key>
+			<integer>2</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>A1689293-972B-4B17-A43C-2BAB9E7698C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]curb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-11-04T18:05:49Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Shorten current Chrome tab</string>
+			<key>lastUsed</key>
+			<date>2012-11-04T18:10:05Z</date>
+			<key>modificationDate</key>
+			<date>2012-11-04T18:12:54Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+# Bit.ly shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+# Create snippets for username (shortcut: #btlyu) and API key (shortcut: #btlya)
+# Find your API key at http://bit.ly/a/your_api_key
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+def get_chrome_url
+  %x{osascript -e 'tell application "Google Chrome" to return URL of active tab of window 1'}.strip
+end
+
+USER_NAME = '%snippet:#btlyu%' # Your login name
+API_KEY = '%snippet:#btlya%'
+
+url = get_chrome_url
+
+res = open("http://api.bit.ly/v3/shorten?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;longUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
+
+begin
+  print res.strip unless res.nil?
+rescue
+  exit
+end</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F72817EA-3982-4D5A-B7A4-812408D28E96</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>[[PREFIX]]surb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2012-11-04T18:05:49Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Shorten current Safari tab</string>
+			<key>lastUsed</key>
+			<date>2012-11-04T18:13:42Z</date>
+			<key>modificationDate</key>
+			<date>2012-11-04T18:13:32Z</date>
+			<key>plainText</key>
+			<string>#!/usr/bin/ruby
+# Bit.ly shortener TextExpander Snippet by Brett Terpstra
+# Working as of June, 2012 but APIs are a'changin
+# Create snippets for username (shortcut: #btlyu) and API key (shortcut: #btlya)
+# Find your API key at http://bit.ly/a/your_api_key
+
+require 'open-uri'
+require 'cgi'
+
+def entity_escape(text)
+  text.gsub(/&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)/, '&amp;amp;')
+end
+
+def make_link(text)
+  case text
+  when %r{\Ahttps?://.*?\.\w{2,4}.*?\z}:
+    entity_escape(text)
+  when %r{\A(www\..*|.*\.\w{2,4})\z}:
+    "http://#{entity_escape text}"
+  when %r{\A.*?\.\w{2,4}\/?.*\z}:
+    "http://#{entity_escape text}"
+  else
+    nil
+  end
+end
+
+def get_chrome_url
+  %x{osascript -e 'tell application "Safari" to return URL of current tab of window 1'}.strip
+end
+
+USER_NAME = '%snippet:#btlyu%' # Your login name
+API_KEY = '%snippet:#btlya%'
+
+url = get_chrome_url
+
+res = open("http://api.bit.ly/v3/shorten?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;longUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
+
+begin
+  print res.strip unless res.nil?
+rescue
+  exit
+end</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>EC6C49B1-A288-42A1-81DF-CFC615D0784F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>[[PREFIX]]eub</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -67,7 +245,7 @@ end</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>uuidString</key>
 			<string>FC28B252-2CBF-46A6-A504-7DB6605FEC94</string>
 		</dict>
@@ -83,7 +261,7 @@ end</string>
 			<key>label</key>
 			<string>CloudApp Direct Link</string>
 			<key>lastUsed</key>
-			<date>2012-08-09T12:24:27Z</date>
+			<date>2012-08-09T12:30:53Z</date>
 			<key>modificationDate</key>
 			<date>2012-08-09T12:24:04Z</date>
 			<key>plainText</key>
@@ -118,7 +296,7 @@ open(input,"Accept" =&gt; "application/json") {|f|
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>4</integer>
 			<key>uuidString</key>
 			<string>77B8C43A-B65F-41CC-A3CD-07C6C97D89EB</string>
 		</dict>
@@ -412,7 +590,7 @@ print "mailto:#{$2.gsub(/./) {sprintf("&amp;#x%02X;", $&amp;.unpack("U")[0])}}" 
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>4</integer>
+			<integer>5</integer>
 			<key>uuidString</key>
 			<string>0A6B1C52-ADB2-47B7-8977-0622EF7F0F7F</string>
 		</dict>
@@ -474,7 +652,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>label</key>
 			<string>jQuery Wrapper</string>
 			<key>lastUsed</key>
-			<date>2012-07-03T02:54:00Z</date>
+			<date>2012-11-02T18:58:57Z</date>
 			<key>modificationDate</key>
 			<date>2010-11-10T09:03:44Z</date>
 			<key>plainText</key>
@@ -482,7 +660,7 @@ print %Q{&lt;a href="#{url}"&gt;%fill:Link Text%&lt;/a&gt;}</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>64</integer>
+			<integer>70</integer>
 			<key>uuidString</key>
 			<string>020CD7DF-48E4-45CE-AEDB-82E94D46E351</string>
 		</dict>
@@ -609,9 +787,9 @@ print %Q{[%fill:Link Text%](#{url})}</string>
 			<key>label</key>
 			<string>Shorten clipboard (bit.ly)</string>
 			<key>lastUsed</key>
-			<date>2012-08-09T11:56:31Z</date>
+			<date>2012-11-04T18:09:12Z</date>
 			<key>modificationDate</key>
-			<date>2012-06-29T19:28:05Z</date>
+			<date>2012-11-04T18:09:43Z</date>
 			<key>plainText</key>
 			<string>#!/usr/bin/ruby
 # Bit.ly shortener TextExpander Snippet by Brett Terpstra
@@ -646,14 +824,14 @@ url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.str
 res = open("http://api.bit.ly/v3/shorten?login=#{USER_NAME}&amp;apiKey=#{API_KEY}&amp;longUrl=#{CGI.escape(url)}&amp;format=txt").read unless url.nil?
 
 begin
-  print res unless res.nil?
+  print res.strip unless res.nil?
 rescue
   exit
 end</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>27</integer>
+			<integer>37</integer>
 			<key>uuidString</key>
 			<string>AED7DF63-8CFE-48AD-BC1C-D67B2CD90856</string>
 		</dict>
@@ -671,7 +849,7 @@ end</string>
 			<key>lastUsed</key>
 			<date>2012-06-29T19:00:44Z</date>
 			<key>modificationDate</key>
-			<date>2012-06-29T19:29:56Z</date>
+			<date>2012-11-04T18:09:50Z</date>
 			<key>plainText</key>
 			<string>#!/usr/bin/ruby
 # is.gd shortener TextExpander Snippet by Brett Terpstra
@@ -698,7 +876,7 @@ def make_link(text)
 end
 
 url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
-print open("http://is.gd/api.php?longurl=#{CGI.escape(url)}").read unless url.nil?</string>
+print open("http://is.gd/api.php?longurl=#{CGI.escape(url)}").read.strip unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
@@ -718,9 +896,9 @@ print open("http://is.gd/api.php?longurl=#{CGI.escape(url)}").read unless url.ni
 			<key>label</key>
 			<string>Shorten clipboard (tinyurl)</string>
 			<key>lastUsed</key>
-			<date>2012-06-29T18:58:26Z</date>
+			<date>2012-08-18T17:54:33Z</date>
 			<key>modificationDate</key>
-			<date>2012-06-29T19:29:52Z</date>
+			<date>2012-11-04T18:09:55Z</date>
 			<key>plainText</key>
 			<string>#!/usr/bin/ruby
 # tinyurl shortener TextExpander Snippet by Brett Terpstra
@@ -748,11 +926,11 @@ end
 
 url = make_link %x{__CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbpaste}.strip
 
-print open("http://tinyurl.com/api-create.php?url=#{CGI.escape(url)}").read unless url.nil?</string>
+print open("http://tinyurl.com/api-create.php?url=#{CGI.escape(url)}").read.strip unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>3</integer>
 			<key>useCount</key>
-			<integer>39</integer>
+			<integer>40</integer>
 			<key>uuidString</key>
 			<string>681CFED6-6FF4-4D1A-8EF7-393221011981</string>
 		</dict>
@@ -822,7 +1000,7 @@ print url unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>3</integer>
+			<integer>4</integer>
 			<key>uuidString</key>
 			<string>9005DCF8-266A-42DF-84DA-0ED9AE493429</string>
 		</dict>
@@ -868,7 +1046,7 @@ print url unless url.nil?</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>10</integer>
+			<integer>13</integer>
 			<key>uuidString</key>
 			<string>BA8791C1-E3DA-48F3-9455-26C6567EB636</string>
 		</dict>
